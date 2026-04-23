@@ -1,0 +1,229 @@
+{
+  "date": "2026-04-23",
+  "stageA": false,
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "GOOGL",
+    "META",
+    "AMZN",
+    "TSLA",
+    "JPM",
+    "BAC",
+    "V",
+    "UNH",
+    "JNJ",
+    "LLY",
+    "XOM",
+    "CVX",
+    "PG",
+    "KO",
+    "WMT",
+    "HD",
+    "CAT"
+  ],
+  "results": [
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "sector": "Semiconductors",
+      "currentPrice": 199.06,
+      "bdrGrade": "ALFA",
+      "bdrScore": 10,
+      "brfLevel": "Moderate",
+      "finalGrade": "ALFA"
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms Inc",
+      "sector": "Media",
+      "currentPrice": 658.45,
+      "bdrGrade": "FAIR",
+      "bdrScore": 12,
+      "brfLevel": "Moderate",
+      "finalGrade": "FAIR"
+    },
+    {
+      "ticker": "XOM",
+      "company": "Exxon Mobil Corp",
+      "sector": "Energy",
+      "currentPrice": 150.47,
+      "bdrGrade": "FAIR",
+      "bdrScore": 14,
+      "brfLevel": "Moderate",
+      "finalGrade": "FAIR"
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corp",
+      "sector": "Technology",
+      "currentPrice": 416.1,
+      "bdrGrade": "FAIR",
+      "bdrScore": 15,
+      "brfLevel": "Moderate",
+      "finalGrade": "FAIR"
+    },
+    {
+      "ticker": "V",
+      "company": "Visa Inc",
+      "sector": "Financial Services",
+      "currentPrice": 308.59,
+      "bdrGrade": "FAIR",
+      "bdrScore": 15,
+      "brfLevel": "Moderate",
+      "finalGrade": "FAIR"
+    },
+    {
+      "ticker": "UNH",
+      "company": "UnitedHealth Group Inc",
+      "sector": "Health Care",
+      "currentPrice": 353.17,
+      "bdrGrade": "FAIR",
+      "bdrScore": 15,
+      "brfLevel": "Moderate",
+      "finalGrade": "FAIR"
+    },
+    {
+      "ticker": "CVX",
+      "company": "Chevron Corp",
+      "sector": "Energy",
+      "currentPrice": 187.79,
+      "bdrGrade": "FAIR",
+      "bdrScore": 15,
+      "brfLevel": "Moderate",
+      "finalGrade": "FAIR"
+    },
+    {
+      "ticker": "BAC",
+      "company": "Bank of America Corp",
+      "sector": "Banking",
+      "currentPrice": 52.45,
+      "bdrGrade": "FAIR",
+      "bdrScore": 11,
+      "brfLevel": "High",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "JPM",
+      "company": "JPMorgan Chase & Co",
+      "sector": "Banking",
+      "currentPrice": 311.82,
+      "bdrGrade": "FAIR",
+      "bdrScore": 12,
+      "brfLevel": "High",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc",
+      "sector": "Media",
+      "currentPrice": 339.17,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 16,
+      "brfLevel": "Moderate",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "LLY",
+      "company": "Eli Lilly and Co",
+      "sector": "Pharmaceuticals",
+      "currentPrice": 919.78,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 16,
+      "brfLevel": "High",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "JNJ",
+      "company": "Johnson & Johnson",
+      "sector": "Pharmaceuticals",
+      "currentPrice": 231.02,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 17,
+      "brfLevel": "Moderate",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "PG",
+      "company": "Procter & Gamble Co",
+      "sector": "Consumer products",
+      "currentPrice": 145.92,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 17,
+      "brfLevel": "Moderate",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "AMZN",
+      "company": "Amazon.com Inc",
+      "sector": "Retail",
+      "currentPrice": 255.59,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 18,
+      "brfLevel": "Moderate",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "KO",
+      "company": "Coca-Cola Co",
+      "sector": "Beverages",
+      "currentPrice": 76.65,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 18,
+      "brfLevel": "Moderate",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "HD",
+      "company": "Home Depot Inc",
+      "sector": "Retail",
+      "currentPrice": 339.77,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 18,
+      "brfLevel": "High",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "AAPL",
+      "company": "Apple Inc",
+      "sector": "Technology",
+      "currentPrice": 274.31,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 22,
+      "brfLevel": "Moderate",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "CAT",
+      "company": "Caterpillar Inc",
+      "sector": "Machinery",
+      "currentPrice": 835.33,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 24,
+      "brfLevel": "High",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla Inc",
+      "sector": "Automobiles",
+      "currentPrice": 373.42,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 28,
+      "brfLevel": "Moderate",
+      "finalGrade": "UNDERPERFORM"
+    },
+    {
+      "ticker": "WMT",
+      "company": "Walmart Inc",
+      "sector": "Retail",
+      "currentPrice": 132.35,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 31,
+      "brfLevel": "Moderate",
+      "finalGrade": "UNDERPERFORM"
+    }
+  ],
+  "errors": []
+}
