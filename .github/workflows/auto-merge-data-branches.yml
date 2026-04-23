@@ -1,0 +1,81 @@
+name: Auto-merge data-only session branches
+
+# Fast-forwards main with any claude/* session branch whose diff against main
+# only touches data-layer paths. Code changes must go through a PR (per plan).
+#
+# Safe by construction:
+#   - Fast-forward only (no merge commits, no rebase, no force-push).
+#   - Path allowlist: only stock-advisor/data/** and stock-advisor/memory.json.
+#   - Any other changed path causes the job to exit without touching main.
+
+on:
+  push:
+    branches:
+      - 'claude/**'
+
+permissions:
+  contents: write
+
+jobs:
+  maybe-fast-forward:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.ref }}
+
+      - name: Decide whether to fast-forward
+        id: decide
+        run: |
+          set -euo pipefail
+          git fetch origin main:main
+          CHANGED=$(git diff --name-only main...HEAD)
+          echo "Changed files vs main:"
+          echo "$CHANGED"
+
+          # Empty diff = no-op branch, skip.
+          if [ -z "$CHANGED" ]; then
+            echo "verdict=skip-empty" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Every changed path must match the data-only allowlist.
+          while IFS= read -r path; do
+            case "$path" in
+              stock-advisor/data/*|stock-advisor/memory.json)
+                ;;
+              *)
+                echo "Non-data change detected: $path"
+                echo "verdict=skip-code" >> "$GITHUB_OUTPUT"
+                exit 0
+                ;;
+            esac
+          done <<< "$CHANGED"
+
+          # Must be a fast-forward (main must be an ancestor of HEAD).
+          if ! git merge-base --is-ancestor main HEAD; then
+            echo "main is not ancestor of HEAD — cannot fast-forward."
+            echo "verdict=skip-nonff" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "verdict=merge" >> "$GITHUB_OUTPUT"
+
+      - name: Fast-forward main
+        if: steps.decide.outputs.verdict == 'merge'
+        run: |
+          set -euo pipefail
+          git config user.name "auto-merge-bot"
+          git config user.email "auto-merge-bot@users.noreply.github.com"
+          git checkout main
+          git merge --ff-only "${GITHUB_SHA}"
+          git push origin main
+          echo "main advanced to ${GITHUB_SHA}"
+
+      - name: Summary
+        run: |
+          echo "Verdict: ${{ steps.decide.outputs.verdict }}"
+          echo "Branch:  ${{ github.ref }}"
+          echo "SHA:     ${{ github.sha }}"
