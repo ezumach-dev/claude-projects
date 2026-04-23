@@ -1,0 +1,22 @@
+[
+  {"ticker": "AAPL", "sector": "Technology"},
+  {"ticker": "MSFT", "sector": "Technology"},
+  {"ticker": "NVDA", "sector": "Technology"},
+  {"ticker": "GOOGL", "sector": "Communication Services"},
+  {"ticker": "META", "sector": "Communication Services"},
+  {"ticker": "AMZN", "sector": "Consumer Discretionary"},
+  {"ticker": "TSLA", "sector": "Consumer Discretionary"},
+  {"ticker": "JPM", "sector": "Financials"},
+  {"ticker": "BAC", "sector": "Financials"},
+  {"ticker": "V", "sector": "Financials"},
+  {"ticker": "UNH", "sector": "Healthcare"},
+  {"ticker": "JNJ", "sector": "Healthcare"},
+  {"ticker": "LLY", "sector": "Healthcare"},
+  {"ticker": "XOM", "sector": "Energy"},
+  {"ticker": "CVX", "sector": "Energy"},
+  {"ticker": "PG", "sector": "Consumer Staples"},
+  {"ticker": "KO", "sector": "Consumer Staples"},
+  {"ticker": "WMT", "sector": "Consumer Staples"},
+  {"ticker": "HD", "sector": "Consumer Discretionary"},
+  {"ticker": "CAT", "sector": "Industrials"}
+]
