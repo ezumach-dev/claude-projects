@@ -129,6 +129,32 @@ def build_email_body(today: str, ranked: list[dict], errors: list[dict], total: 
     return "\n".join(lines)
 
 
+def send_whatsapp(ranked: list[dict], today: str) -> None:
+    sid = os.environ.get("TWILIO_ACCOUNT_SID")
+    tok = os.environ.get("TWILIO_AUTH_TOKEN")
+    sender = os.environ.get("TWILIO_WHATSAPP_FROM")
+    recipient = os.environ.get("TWILIO_WHATSAPP_TO")
+    if not all([sid, tok, sender, recipient]):
+        log("PHASE4b", "skipped: Twilio env vars missing")
+        return
+
+    top3 = ranked[:3]
+    picks = ", ".join(f"{r['ticker']} ({r.get('finalGrade','?')})" for r in top3) if top3 else "no picks"
+    body = (
+        f"StockAdvisor {today}: Top 3 — {picks}. "
+        f"{len(ranked)} analyzed. Check email for full report."
+    )
+
+    url = f"https://api.twilio.com/2010-04-01/Accounts/{sid}/Messages.json"
+    resp = requests.post(
+        url,
+        data={"From": sender, "To": recipient, "Body": body},
+        auth=(sid, tok),
+        timeout=20,
+    )
+    resp.raise_for_status()
+
+
 def send_email(subject: str, body: str, env: dict) -> None:
     msg = MIMEMultipart()
     msg["From"] = f"{env.get('SMTP_FROM_NAME','StockAdvisor')} <{env['SMTP_USER']}>"
@@ -247,6 +273,13 @@ def main() -> int:
         log("PHASE4", f"FAIL email: {type(e).__name__}: {e}")
         write_error_file(script_dir, today, "PHASE4", traceback.format_exc())
         return 3
+
+    try:
+        send_whatsapp(ranked, today)
+        log("PHASE4b", "whatsapp sent")
+    except Exception as e:
+        log("PHASE4b", f"WARN whatsapp failed (non-fatal): {type(e).__name__}: {e}")
+        errors.append({"ticker": "-", "phase": "PHASE4b", "error": f"{type(e).__name__}: {e}"})
 
     return 0 if not errors else 1
 
