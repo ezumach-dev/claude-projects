@@ -174,7 +174,7 @@ def main() -> int:
 
     load_env_local(script_dir)
 
-    stage_a = os.environ.get("STAGE_A", "1") == "1"
+    stage_a = os.environ.get("STAGE_A", "1").strip().lower() in ("1", "true", "yes", "on")
 
     try:
         env = require_env(
