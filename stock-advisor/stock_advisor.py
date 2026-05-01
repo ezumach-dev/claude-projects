@@ -1,26 +1,23 @@
 """
-StockAdvisor Daily — execution layer.
+StockAdvaisor Daily — execution layer.
 Runs inside GitHub Actions (or locally for Stage A test).
-Reads tickers, calls analyze.php for BDR/BRF scoring, ranks, emails, writes data file.
+Reads tickers, calls analyze.php for BDR/BRF scoring, ranks, writes data file.
+Email is handled by orchestrator.py after insights are generated.
 """
 
 import json
 import os
-import smtplib
-import ssl
 import sys
 import time
 import traceback
 from datetime import datetime, timezone
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 from pathlib import Path
 
 import requests
 
 STAGE_A_TICKERS = ["AAPL", "NVDA", "XOM"]
 
-ANALYZE_URL = "https://eandhconsulting.com/portal/public/StockAdvisorII/analyze.php"
+ANALYZE_URL = "https://eandhconsulting.com/portal/public/StockAdvaisorII/analyze.php"
 ANALYZE_TIMEOUT = 45
 REQUEST_GAP_SECONDS = 0.5
 
@@ -46,13 +43,6 @@ def load_env_local(script_dir: Path) -> None:
                 key, _, val = line.partition("=")
                 os.environ.setdefault(key.strip(), val.strip())
             return
-
-
-def require_env(*names: str) -> dict:
-    missing = [n for n in names if not os.environ.get(n)]
-    if missing:
-        raise RuntimeError(f"Missing required env vars: {', '.join(missing)}")
-    return {n: os.environ[n] for n in names}
 
 
 def load_tickers(script_dir: Path, override: bool) -> list[str]:
@@ -94,41 +84,6 @@ def rank_results(results: list[dict]) -> list[dict]:
     return sorted(results, key=key)
 
 
-def build_email_body(today: str, ranked: list[dict], errors: list[dict], total: int) -> str:
-    lines = []
-    lines.append("=" * 60)
-    lines.append(f"StockAdvisor MVP — {today} | {len(ranked)} of {total} analyzed")
-    lines.append("=" * 60)
-    lines.append("")
-    lines.append("RESULTS (RANKED)")
-    lines.append("-" * 60)
-    if ranked:
-        for i, r in enumerate(ranked, 1):
-            lines.append(
-                f"{i}. {r['ticker']} — {r.get('finalGrade','?')} "
-                f"(BDR: {r.get('bdrScore','?')}yrs, "
-                f"BRF: {r.get('brfLevel','?')}, "
-                f"Price: ${r.get('currentPrice','?')})"
-            )
-    else:
-        lines.append("(no results)")
-    lines.append("")
-    lines.append("ERRORS")
-    lines.append("-" * 60)
-    if errors:
-        for e in errors:
-            lines.append(f"- [{e['phase']}] {e['ticker']}: {e['error']}")
-    else:
-        lines.append("(none)")
-    lines.append("")
-    lines.append("PIPELINE STATUS")
-    lines.append("-" * 60)
-    lines.append(f"- Phase 2 (analysis): {len(ranked)} of {total} tickers returned")
-    lines.append("- Phase 3 (ranking):  PASS" if ranked else "- Phase 3 (ranking):  SKIPPED")
-    lines.append("- Phase 4 (email):    PASS (you are reading this)")
-    return "\n".join(lines)
-
-
 def send_whatsapp(ranked: list[dict], today: str) -> None:
     sid = os.environ.get("TWILIO_ACCOUNT_SID")
     tok = os.environ.get("TWILIO_AUTH_TOKEN")
@@ -141,8 +96,8 @@ def send_whatsapp(ranked: list[dict], today: str) -> None:
     top3 = ranked[:3]
     picks = ", ".join(f"{r['ticker']} ({r.get('finalGrade','?')})" for r in top3) if top3 else "no picks"
     body = (
-        f"StockAdvisor {today}: Top 3 — {picks}. "
-        f"{len(ranked)} analyzed. Check email for full report."
+        f"StockAdvaisor {today}: Top 3 — {picks}. "
+        f"{len(ranked)} analyzed. Full report coming via email."
     )
 
     url = f"https://api.twilio.com/2010-04-01/Accounts/{sid}/Messages.json"
@@ -153,26 +108,6 @@ def send_whatsapp(ranked: list[dict], today: str) -> None:
         timeout=20,
     )
     resp.raise_for_status()
-
-
-def send_email(subject: str, body: str, env: dict) -> None:
-    msg = MIMEMultipart()
-    msg["From"] = f"{env.get('SMTP_FROM_NAME','StockAdvisor')} <{env['SMTP_USER']}>"
-    msg["To"] = env["NOTIFY_EMAIL"]
-    msg["Subject"] = subject
-    msg.attach(MIMEText(body, "plain", "utf-8"))
-
-    port = int(env["SMTP_PORT"])
-    ctx = ssl.create_default_context()
-    if port == 465:
-        with smtplib.SMTP_SSL(env["SMTP_HOST"], port, context=ctx, timeout=30) as s:
-            s.login(env["SMTP_USER"], env["SMTP_PASS"])
-            s.send_message(msg)
-    else:
-        with smtplib.SMTP(env["SMTP_HOST"], port, timeout=30) as s:
-            s.starttls(context=ctx)
-            s.login(env["SMTP_USER"], env["SMTP_PASS"])
-            s.send_message(msg)
 
 
 def write_data_file(script_dir: Path, today: str, payload: dict) -> Path:
@@ -186,7 +121,7 @@ def write_error_file(script_dir: Path, today: str, phase: str, error: str) -> Pa
     out = script_dir / "data" / f"{today}-ERROR.md"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(
-        f"# StockAdvisor run failed — {today}\n\n"
+        f"# StockAdvaisor run failed — {today}\n\n"
         f"**Phase:** {phase}\n\n"
         f"**Raw error (verbatim, do not paraphrase):**\n\n```\n{error}\n```\n",
         encoding="utf-8",
@@ -201,16 +136,6 @@ def main() -> int:
     load_env_local(script_dir)
 
     stage_a = os.environ.get("STAGE_A", "0").strip().lower() in ("1", "true", "yes", "on")
-
-    try:
-        env = require_env(
-            "SMTP_HOST", "SMTP_PORT", "SMTP_USER", "SMTP_PASS", "NOTIFY_EMAIL"
-        )
-        env.setdefault("SMTP_FROM_NAME", os.environ.get("SMTP_FROM_NAME", "StockAdvisor"))
-    except Exception as e:
-        log("INIT", f"FAIL: {e}")
-        write_error_file(script_dir, today, "INIT", str(e))
-        return 2
 
     log("INIT", f"today={today} stage_a={stage_a}")
 
@@ -263,14 +188,6 @@ def main() -> int:
         log("PHASE4", f"wrote {data_path}")
     except Exception as e:
         log("PHASE4", f"FAIL writing data file: {e}")
-
-    try:
-        subject = f"StockAdvisor MVP — {today} | {len(ranked)} of {len(tickers)} analyzed"
-        body = build_email_body(today, ranked, errors, len(tickers))
-        send_email(subject, body, env)
-        log("PHASE4", f"email sent to {env['NOTIFY_EMAIL']}")
-    except Exception as e:
-        log("PHASE4", f"FAIL email: {type(e).__name__}: {e}")
         write_error_file(script_dir, today, "PHASE4", traceback.format_exc())
         return 3
 
@@ -279,7 +196,6 @@ def main() -> int:
         log("PHASE4b", "whatsapp sent")
     except Exception as e:
         log("PHASE4b", f"WARN whatsapp failed (non-fatal): {type(e).__name__}: {e}")
-        errors.append({"ticker": "-", "phase": "PHASE4b", "error": f"{type(e).__name__}: {e}"})
 
     return 0 if not errors else 1
 
