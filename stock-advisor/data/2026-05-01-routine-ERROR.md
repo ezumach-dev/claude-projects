@@ -3,5 +3,5 @@
 **Raw error:**
 
 ```
-HTTPSConnectionPool(host='api.kie.ai', port=443): Read timed out. (read timeout=120)
+'list' object has no attribute 'get'
 ```
