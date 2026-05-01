@@ -3,5 +3,5 @@
 **Raw error:**
 
 ```
-'content'
+Unexpected response format: {'code': 422, 'msg': 'The page does not exist', 'data': None}
 ```
