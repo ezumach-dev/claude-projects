@@ -19,7 +19,7 @@ DATA_DIR = SCRIPT_DIR / "data"
 MEMORY_PATH = SCRIPT_DIR / "memory.json"
 
 KIE_URL = "https://api.kie.ai/claude/v1/messages"
-MODEL = "claude-sonnet-4-6"
+MODEL = "claude-3-5-sonnet-20241022"
 MAX_TOKENS = 2048
 
 GRADE_COLOR = {
