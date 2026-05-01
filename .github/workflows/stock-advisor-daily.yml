@@ -1,4 +1,4 @@
-name: StockAdvisor Daily
+name: StockAdvaisor Daily
 
 on:
   schedule:
