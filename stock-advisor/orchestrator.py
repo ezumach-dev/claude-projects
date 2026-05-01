@@ -19,7 +19,7 @@ DATA_DIR = SCRIPT_DIR / "data"
 MEMORY_PATH = SCRIPT_DIR / "memory.json"
 
 KIE_URL = "https://api.kie.ai/claude/v1/messages"
-MODEL = "claude-haiku-4-5"
+MODEL = "claude-opus-4-5"
 MAX_TOKENS = 2048
 
 GRADE_COLOR = {
@@ -94,24 +94,35 @@ def parse_json_response(raw: str) -> dict:
 
 
 def build_prompt(today: str, data: dict, memory: dict) -> str:
-    return f"""You are the AI brain of StockAdvaisor. Today is {today}.
+    results = data.get("results", [])
+    summary = [
+        {
+            "ticker": r["ticker"],
+            "sector": r.get("sector"),
+            "grade": r.get("finalGrade"),
+            "bdr": r.get("bdrScore"),
+            "brf": r.get("brfLevel"),
+            "price": r.get("currentPrice"),
+        }
+        for r in results
+    ]
+    prev_grades = {k: v.get("lastGrade") for k, v in memory.get("analyzedTickers", {}).items()}
+    run_count = memory.get("runCount", 0)
 
-Your job: read today's ticker analysis, synthesize insights, and return structured updates.
+    return f"""You are the AI brain of StockAdvaisor. Today is {today}. Run #{run_count + 1}.
 
-TODAY'S DATA:
-{json.dumps(data, indent=2)}
+RANKED RESULTS ({len(summary)} tickers):
+{json.dumps(summary, indent=2)}
 
-CURRENT MEMORY:
-{json.dumps(memory, indent=2)}
+PREVIOUS GRADES (from memory):
+{json.dumps(prev_grades)}
 
 RULES:
-- Focus on sector patterns, grade flips vs memory, BDR/BRF modifier signals, anomalies.
-- Only add non-obvious insights. No tautologies.
-- Never modify BDR/BRF scoring logic.
-- Keep insights_md to 3-5 concise bullet points (markdown format).
-- If you spot a genuine code improvement in stock_advisor.py, describe it under improvement_pr.
+- Identify sector patterns, grade flips vs previous, BDR/BRF signals, anomalies.
+- 3-5 concise bullet points only. No tautologies.
+- Never suggest modifying BDR/BRF scoring logic.
 
-Respond with ONLY a valid JSON object — no prose before or after:
+Respond with ONLY valid JSON — no prose:
 {{
   "insights_md": "- Bullet one\\n- Bullet two\\n- Bullet three",
   "memory_updates": {{
@@ -122,11 +133,7 @@ Respond with ONLY a valid JSON object — no prose before or after:
     "analyzedTickers": {{}}
   }},
   "improvement_pr": null
-}}
-
-For improvement_pr use null if none found, or:
-{{"branch": "stockadvaisor/fix-<slug>", "title": "fix: <what>", "body": "<why it matters and what to change>"}}
-"""
+}}"""
 
 
 # ── HTML Email Builder ───────────────────────────────────────────────────────
