@@ -36,7 +36,13 @@ jobs:
 
       - name: Run orchestrator
         env:
-          KIE_API_KEY: ${{ secrets.KIE_API_KEY }}
+          KIE_API_KEY:      ${{ secrets.KIE_API_KEY }}
+          SMTP_HOST:        ${{ secrets.SMTP_HOST }}
+          SMTP_PORT:        ${{ secrets.SMTP_PORT }}
+          SMTP_USER:        ${{ secrets.SMTP_USER }}
+          SMTP_PASS:        ${{ secrets.SMTP_PASS }}
+          SMTP_FROM_NAME:   ${{ secrets.SMTP_FROM_NAME }}
+          NOTIFY_EMAIL:     ${{ secrets.NOTIFY_EMAIL }}
         run: python orchestrator.py
 
       - name: Commit insights + memory
