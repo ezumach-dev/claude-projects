@@ -430,9 +430,11 @@ def build_html_email(today: str, data: dict, insights_md: str, pr: dict | None, 
 # ── Email Send ───────────────────────────────────────────────────────────────
 
 def send_email(subject: str, html_body: str, env: dict) -> None:
+    recipients = [e.strip() for e in env["NOTIFY_EMAIL"].split(",") if e.strip()]
+
     msg = MIMEMultipart("alternative")
     msg["From"] = f"{env.get('SMTP_FROM_NAME', 'StockAdvaisor')} <{env['SMTP_USER']}>"
-    msg["To"] = env["NOTIFY_EMAIL"]
+    msg["To"] = ", ".join(recipients)
     msg["Subject"] = subject
 
     msg.attach(MIMEText(html_body, "html", "utf-8"))
@@ -442,12 +444,12 @@ def send_email(subject: str, html_body: str, env: dict) -> None:
     if port == 465:
         with smtplib.SMTP_SSL(env["SMTP_HOST"], port, context=ctx, timeout=30) as s:
             s.login(env["SMTP_USER"], env["SMTP_PASS"])
-            s.send_message(msg)
+            s.sendmail(env["SMTP_USER"], recipients, msg.as_string())
     else:
         with smtplib.SMTP(env["SMTP_HOST"], port, timeout=30) as s:
             s.starttls(context=ctx)
             s.login(env["SMTP_USER"], env["SMTP_PASS"])
-            s.send_message(msg)
+            s.sendmail(env["SMTP_USER"], recipients, msg.as_string())
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
