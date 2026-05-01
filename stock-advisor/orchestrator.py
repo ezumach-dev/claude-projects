@@ -73,7 +73,15 @@ def call_claude(api_key: str, prompt: str) -> str:
         timeout=120,
     )
     resp.raise_for_status()
-    return resp.json()["content"][0]["text"]
+    body = resp.json()
+    log(f"Kie.ai response keys: {list(body.keys())}")
+    # Anthropic format
+    if "content" in body:
+        return body["content"][0]["text"]
+    # OpenAI format
+    if "choices" in body:
+        return body["choices"][0]["message"]["content"]
+    raise ValueError(f"Unexpected response format: {body}")
 
 
 def parse_json_response(raw: str) -> dict:
