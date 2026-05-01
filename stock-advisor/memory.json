@@ -1,10 +1,157 @@
 {
-  "lastUpdated": null,
-  "runCount": 0,
-  "sectorPatterns": {},
-  "modifierInsights": {},
-  "marketConditionNotes": [],
-  "topPicksHistory": [],
-  "analyzedTickers": {},
+  "lastUpdated": "2026-05-01",
+  "runCount": 1,
+  "sectorPatterns": {
+    "Semiconductors": {
+      "topGrade": "ALFA",
+      "avgBDR": 10
+    },
+    "Media": {
+      "topGrade": "FAIR",
+      "avgBDR": 13
+    },
+    "Banking": {
+      "topGrade": "UNDERPERFORM",
+      "avgBDR": 12,
+      "brf": "High"
+    },
+    "Energy": {
+      "topGrade": "FAIR",
+      "avgBDR": 16
+    },
+    "Retail": {
+      "topGrade": "UNDERPERFORM",
+      "avgBDR": 22.3
+    }
+  },
+  "modifierInsights": {
+    "highBRFsectors": [
+      "Banking",
+      "Retail (HD)",
+      "Machinery",
+      "Pharmaceuticals (LLY)"
+    ]
+  },
+  "marketConditionNotes": [
+    "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
+    "High-BDR cluster (>20) contains AAPL, CAT, TSLA, WMT \u2014 caution on momentum names."
+  ],
+  "topPicksHistory": [
+    {
+      "date": "2026-05-01",
+      "alfaTickers": [
+        "NVDA"
+      ],
+      "fairTickers": [
+        "META",
+        "MSFT",
+        "GOOGL",
+        "UNH",
+        "XOM"
+      ]
+    }
+  ],
+  "analyzedTickers": {
+    "NVDA": {
+      "grade": "ALFA",
+      "bdr": 10,
+      "brf": "Moderate"
+    },
+    "META": {
+      "grade": "FAIR",
+      "bdr": 11,
+      "brf": "Moderate"
+    },
+    "MSFT": {
+      "grade": "FAIR",
+      "bdr": 14,
+      "brf": "Moderate"
+    },
+    "GOOGL": {
+      "grade": "FAIR",
+      "bdr": 15,
+      "brf": "Moderate"
+    },
+    "UNH": {
+      "grade": "FAIR",
+      "bdr": 15,
+      "brf": "Moderate"
+    },
+    "XOM": {
+      "grade": "FAIR",
+      "bdr": 15,
+      "brf": "Moderate"
+    },
+    "JPM": {
+      "grade": "UNDERPERFORM",
+      "bdr": 12,
+      "brf": "High"
+    },
+    "BAC": {
+      "grade": "UNDERPERFORM",
+      "bdr": 12,
+      "brf": "High"
+    },
+    "LLY": {
+      "grade": "UNDERPERFORM",
+      "bdr": 15,
+      "brf": "High"
+    },
+    "V": {
+      "grade": "UNDERPERFORM",
+      "bdr": 16,
+      "brf": "Moderate"
+    },
+    "JNJ": {
+      "grade": "UNDERPERFORM",
+      "bdr": 17,
+      "brf": "Moderate"
+    },
+    "CVX": {
+      "grade": "UNDERPERFORM",
+      "bdr": 17,
+      "brf": "Moderate"
+    },
+    "PG": {
+      "grade": "UNDERPERFORM",
+      "bdr": 17,
+      "brf": "Moderate"
+    },
+    "KO": {
+      "grade": "UNDERPERFORM",
+      "bdr": 17,
+      "brf": "Moderate"
+    },
+    "HD": {
+      "grade": "UNDERPERFORM",
+      "bdr": 17,
+      "brf": "High"
+    },
+    "AMZN": {
+      "grade": "UNDERPERFORM",
+      "bdr": 19,
+      "brf": "Moderate"
+    },
+    "AAPL": {
+      "grade": "UNDERPERFORM",
+      "bdr": 22,
+      "brf": "Moderate"
+    },
+    "CAT": {
+      "grade": "UNDERPERFORM",
+      "bdr": 24,
+      "brf": "High"
+    },
+    "TSLA": {
+      "grade": "UNDERPERFORM",
+      "bdr": 29,
+      "brf": "Moderate"
+    },
+    "WMT": {
+      "grade": "UNDERPERFORM",
+      "bdr": 31,
+      "brf": "Moderate"
+    }
+  },
   "improvementNotes": []
 }
