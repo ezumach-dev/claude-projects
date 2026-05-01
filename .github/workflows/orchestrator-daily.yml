@@ -1,6 +1,8 @@
 name: StockAdvaisor Orchestrator
 
 on:
+  # Fires only when StockAdvaisor Daily completes — that workflow runs Mon-Fri only,
+  # so this orchestrator is inherently weekday-only.
   workflow_run:
     workflows: ["StockAdvaisor Daily"]
     types: [completed]
