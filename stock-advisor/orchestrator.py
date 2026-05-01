@@ -106,7 +106,10 @@ def build_prompt(today: str, data: dict, memory: dict) -> str:
         }
         for r in results
     ]
-    prev_grades = {k: v.get("lastGrade") for k, v in memory.get("analyzedTickers", {}).items()}
+    prev_grades = {
+        k: v.get("lastGrade") if isinstance(v, dict) else None
+        for k, v in memory.get("analyzedTickers", {}).items()
+    }
     run_count = memory.get("runCount", 0)
 
     return f"""You are the AI brain of StockAdvaisor. Today is {today}. Run #{run_count + 1}.
