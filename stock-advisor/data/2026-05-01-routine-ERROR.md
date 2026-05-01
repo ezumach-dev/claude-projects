@@ -3,5 +3,5 @@
 **Raw error:**
 
 ```
-Unexpected response format: {'code': 422, 'msg': 'The page does not exist', 'data': None}
+HTTPSConnectionPool(host='api.kie.ai', port=443): Read timed out. (read timeout=120)
 ```
