@@ -17,7 +17,7 @@ import requests
 
 STAGE_A_TICKERS = ["AAPL", "NVDA", "XOM"]
 
-ANALYZE_URL = "https://eandhconsulting.com/portal/public/StockAdvaisorII/analyze.php"
+ANALYZE_URL = "https://eandhconsulting.com/portal/public/StockAdvaisorIII/analyze.php"
 ANALYZE_TIMEOUT = 45
 REQUEST_GAP_SECONDS = 0.5
 
