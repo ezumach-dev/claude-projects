@@ -52,6 +52,8 @@ jobs:
           TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
           TWILIO_WHATSAPP_FROM: ${{ secrets.TWILIO_WHATSAPP_FROM }}
           TWILIO_WHATSAPP_TO: ${{ secrets.TWILIO_WHATSAPP_TO }}
+          TWILIO_SMS_FROM: ${{ secrets.TWILIO_SMS_FROM }}
+          TWILIO_SMS_TO: ${{ secrets.TWILIO_SMS_TO }}
         run: python stock_advisor.py
 
       - name: Commit data + error files
