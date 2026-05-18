@@ -1,18 +1,16 @@
 {
-  "lastUpdated": "2026-05-04",
-  "runCount": 2,
+  "lastUpdated": "2026-05-18",
+  "runCount": 3,
   "sectorPatterns": {
-    "Semiconductors": "NVDA sole ALFA; sector outperformance vs broader tech",
+    "Semiconductors": "Leading on BDR; low risk profile",
     "Media": {
       "topGrade": "FAIR",
       "avgBDR": 13
     },
     "Banking": "High BRF across BAC/JPM despite moderate BDR; sector-wide caution",
-    "Energy": {
-      "topGrade": "FAIR",
-      "avgBDR": 16
-    },
-    "Retail": "Uniformly UNDERPERFORM with wide BDR spread (17\u201331); WMT weakest"
+    "Energy": "Lagging; highest BDR, underperforming",
+    "Retail": "Uniformly UNDERPERFORM with wide BDR spread (17\u201331); WMT weakest",
+    "Technology": "Moderate risk; cautious positioning"
   },
   "modifierInsights": {
     "highBRFsectors": [
@@ -32,13 +30,15 @@
       "NVDA (10)",
       "META (11)",
       "BAC (11)"
-    ]
+    ],
+    "BDR_BRF_correlation": "Lower BDR correlates with better grades in current batch"
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
     "High-BDR cluster (>20) contains AAPL, CAT, TSLA, WMT \u2014 caution on momentum names.",
     "Defensive names (PG, KO, JNJ) all UNDERPERFORM\u2014risk-off rotation not rewarded",
-    "Energy mixed: XOM FAIR, CVX UNDERPERFORM despite similar BDR"
+    "Energy mixed: XOM FAIR, CVX UNDERPERFORM despite similar BDR",
+    "Growth sectors favored over commodities as of 2026-05-18"
   ],
   "topPicksHistory": [
     {
@@ -66,15 +66,21 @@
         "V",
         "XOM"
       ]
+    },
+    {
+      "date": "2026-05-18",
+      "top": "NVDA",
+      "grade": "FAIR",
+      "bdr": 11
     }
   ],
   "analyzedTickers": {
-    "NVDA": "ALFA",
+    "NVDA": "FAIR",
     "META": "FAIR",
     "MSFT": "FAIR",
     "GOOGL": "UNDERPERFORM",
     "UNH": "FAIR",
-    "XOM": "FAIR",
+    "XOM": "UNDERPERFORM",
     "JPM": "UNDERPERFORM",
     "BAC": "UNDERPERFORM",
     "LLY": "UNDERPERFORM",
@@ -85,7 +91,7 @@
     "KO": "UNDERPERFORM",
     "HD": "UNDERPERFORM",
     "AMZN": "UNDERPERFORM",
-    "AAPL": "UNDERPERFORM",
+    "AAPL": "FAIR",
     "CAT": "UNDERPERFORM",
     "TSLA": "UNDERPERFORM",
     "WMT": "UNDERPERFORM"
