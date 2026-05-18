@@ -84,13 +84,17 @@ def rank_results(results: list[dict]) -> list[dict]:
     return sorted(results, key=key)
 
 
-def send_whatsapp(ranked: list[dict], today: str) -> None:
+def send_sms(ranked: list[dict], today: str) -> None:
     sid = os.environ.get("TWILIO_ACCOUNT_SID")
     tok = os.environ.get("TWILIO_AUTH_TOKEN")
-    sender = os.environ.get("TWILIO_WHATSAPP_FROM")
-    recipient = os.environ.get("TWILIO_WHATSAPP_TO")
+    sender = os.environ.get("TWILIO_SMS_FROM")
+    # Recipient: explicit TWILIO_SMS_TO, else reuse the WhatsApp number (strip prefix).
+    recipient = (
+        os.environ.get("TWILIO_SMS_TO")
+        or (os.environ.get("TWILIO_WHATSAPP_TO") or "").replace("whatsapp:", "").strip()
+    )
     if not all([sid, tok, sender, recipient]):
-        log("PHASE4b", "skipped: Twilio env vars missing")
+        log("PHASE4b", "skipped: Twilio SMS env vars missing (need TWILIO_SMS_FROM + recipient)")
         return
 
     top3 = ranked[:3]
@@ -100,14 +104,37 @@ def send_whatsapp(ranked: list[dict], today: str) -> None:
         f"{len(ranked)} analyzed. Full report coming via email."
     )
 
-    url = f"https://api.twilio.com/2010-04-01/Accounts/{sid}/Messages.json"
+    base = f"https://api.twilio.com/2010-04-01/Accounts/{sid}/Messages"
     resp = requests.post(
-        url,
+        f"{base}.json",
         data={"From": sender, "To": recipient, "Body": body},
         auth=(sid, tok),
         timeout=20,
     )
     resp.raise_for_status()
+    info = resp.json()
+    msg_sid = info.get("sid")
+    if not msg_sid:
+        raise RuntimeError(f"Twilio response missing SID: {info}")
+
+    # Twilio returns HTTP 201 even when delivery later fails — this is exactly
+    # what hid the WhatsApp 63015 errors for weeks. Poll until a terminal
+    # state so a real delivery failure is loud, not silent.
+    status = info.get("status", "queued")
+    err = info.get("error_code")
+    for _ in range(5):
+        if status in ("delivered", "sent", "failed", "undelivered"):
+            break
+        time.sleep(4)
+        chk = requests.get(f"{base}/{msg_sid}.json", auth=(sid, tok), timeout=20)
+        chk.raise_for_status()
+        d = chk.json()
+        status = d.get("status", status)
+        err = d.get("error_code")
+
+    if status in ("failed", "undelivered") or err:
+        raise RuntimeError(f"SMS not delivered: status={status} error={err}")
+    log("PHASE4b", f"SMS {status} sid={msg_sid} -> {recipient}")
 
 
 def write_data_file(script_dir: Path, today: str, payload: dict) -> Path:
@@ -192,10 +219,9 @@ def main() -> int:
         return 3
 
     try:
-        send_whatsapp(ranked, today)
-        log("PHASE4b", "whatsapp sent")
+        send_sms(ranked, today)
     except Exception as e:
-        log("PHASE4b", f"WARN whatsapp failed (non-fatal): {type(e).__name__}: {e}")
+        log("PHASE4b", f"WARN SMS failed (non-fatal): {type(e).__name__}: {e}")
 
     return 0 if not errors else 1
 
