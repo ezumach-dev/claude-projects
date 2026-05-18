@@ -1,129 +1,42 @@
 {
   "date": "2026-05-18",
-  "stageA": false,
+  "stageA": true,
   "tickers": [
     "AAPL",
-    "MSFT",
     "NVDA",
-    "GOOGL",
-    "META",
-    "AMZN",
-    "TSLA",
-    "JPM",
-    "BAC",
-    "V",
-    "UNH",
-    "JNJ",
-    "LLY",
-    "XOM",
-    "CVX",
-    "PG",
-    "KO",
-    "WMT",
-    "HD",
-    "CAT"
+    "XOM"
   ],
-  "results": [],
-  "errors": [
-    {
-      "ticker": "AAPL",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "MSFT",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
+  "results": [
     {
       "ticker": "NVDA",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
+      "company": "NVIDIA Corp",
+      "sector": "Semiconductors",
+      "currentPrice": 222.32,
+      "bdrGrade": "FAIR",
+      "bdrScore": 11,
+      "brfLevel": "Low",
+      "finalGrade": "FAIR"
     },
     {
-      "ticker": "GOOGL",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "META",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "AMZN",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "TSLA",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "JPM",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "BAC",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "V",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "UNH",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "JNJ",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "LLY",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
+      "ticker": "AAPL",
+      "company": "Apple Inc",
+      "sector": "Technology",
+      "currentPrice": 297.84,
+      "bdrGrade": "FAIR",
+      "bdrScore": 14,
+      "brfLevel": "Moderate",
+      "finalGrade": "FAIR"
     },
     {
       "ticker": "XOM",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "CVX",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "PG",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "KO",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "WMT",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "HD",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
-    },
-    {
-      "ticker": "CAT",
-      "phase": "PHASE2",
-      "error": "HTTP 404: <!DOCTYPE html>\n<html lang=\"en-us\"\n    prefix=\"content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: ht"
+      "company": "Exxon Mobil Corp",
+      "sector": "Energy",
+      "currentPrice": 160.49,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 19,
+      "brfLevel": "Low",
+      "finalGrade": "UNDERPERFORM"
     }
-  ]
+  ],
+  "errors": []
 }
