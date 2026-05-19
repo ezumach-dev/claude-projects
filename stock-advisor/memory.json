@@ -1,16 +1,15 @@
 {
-  "lastUpdated": "2026-05-18",
-  "runCount": 3,
+  "lastUpdated": "2026-05-19",
+  "runCount": 4,
   "sectorPatterns": {
     "Semiconductors": "Leading on BDR; low risk profile",
-    "Media": {
-      "topGrade": "FAIR",
-      "avgBDR": 13
-    },
-    "Banking": "High BRF across BAC/JPM despite moderate BDR; sector-wide caution",
-    "Energy": "Lagging; highest BDR, underperforming",
+    "Media": "Split leadership\u2014META preferred over GOOGL",
+    "Banking": "Strong\u2014both majors ALFA-rated, BDR 9",
+    "Energy": "Weak\u2014both majors UNDERPERFORM",
     "Retail": "Uniformly UNDERPERFORM with wide BDR spread (17\u201331); WMT weakest",
-    "Technology": "Moderate risk; cautious positioning"
+    "Technology": "Moderate risk; cautious positioning",
+    "Pharmaceuticals": "Divergent\u2014LLY ALFA vs JNJ FAIR",
+    "Healthcare": "Under pressure\u2014UNH UNDERPERFORM with High risk"
   },
   "modifierInsights": {
     "highBRFsectors": [
@@ -31,14 +30,24 @@
       "META (11)",
       "BAC (11)"
     ],
-    "BDR_BRF_correlation": "Lower BDR correlates with better grades in current batch"
+    "BDR_BRF_correlation": "Lower BDR correlates with better grades in current batch",
+    "lowRiskALFA": [
+      "META",
+      "GOOGL"
+    ],
+    "highRiskUnderperform": [
+      "HD",
+      "UNH"
+    ]
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
     "High-BDR cluster (>20) contains AAPL, CAT, TSLA, WMT \u2014 caution on momentum names.",
     "Defensive names (PG, KO, JNJ) all UNDERPERFORM\u2014risk-off rotation not rewarded",
     "Energy mixed: XOM FAIR, CVX UNDERPERFORM despite similar BDR",
-    "Growth sectors favored over commodities as of 2026-05-18"
+    "Growth sectors favored over commodities as of 2026-05-18",
+    "Run #4: Financials and big tech leading; energy and traditional retail lagging",
+    "Risk-off rotation visible in UNH, HD downgrades"
   ],
   "topPicksHistory": [
     {
@@ -72,27 +81,39 @@
       "top": "NVDA",
       "grade": "FAIR",
       "bdr": 11
+    },
+    {
+      "run": 4,
+      "date": "2026-05-19",
+      "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "GOOGL",
+        "LLY"
+      ]
     }
   ],
   "analyzedTickers": {
     "NVDA": "FAIR",
-    "META": "FAIR",
-    "MSFT": "FAIR",
-    "GOOGL": "UNDERPERFORM",
-    "UNH": "FAIR",
+    "META": "ALFA",
+    "MSFT": "ALFA",
+    "GOOGL": "ALFA",
+    "UNH": "UNDERPERFORM",
     "XOM": "UNDERPERFORM",
-    "JPM": "UNDERPERFORM",
-    "BAC": "UNDERPERFORM",
-    "LLY": "UNDERPERFORM",
+    "JPM": "ALFA",
+    "BAC": "ALFA",
+    "LLY": "ALFA",
     "V": "FAIR",
-    "JNJ": "UNDERPERFORM",
+    "JNJ": "FAIR",
     "CVX": "UNDERPERFORM",
-    "PG": "UNDERPERFORM",
-    "KO": "UNDERPERFORM",
+    "PG": "FAIR",
+    "KO": "FAIR",
     "HD": "UNDERPERFORM",
-    "AMZN": "UNDERPERFORM",
+    "AMZN": "FAIR",
     "AAPL": "FAIR",
-    "CAT": "UNDERPERFORM",
+    "CAT": "FAIR",
     "TSLA": "UNDERPERFORM",
     "WMT": "UNDERPERFORM"
   },
