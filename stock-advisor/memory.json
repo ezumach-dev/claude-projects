@@ -1,13 +1,13 @@
 {
   "lastUpdated": "2026-05-20",
-  "runCount": 5,
+  "runCount": 6,
   "sectorPatterns": {
-    "Semiconductors": "Leading on BDR; low risk profile",
+    "Semiconductors": "FAIR",
     "Media": "Strong\u2014META/GOOGL top-ranked",
     "Banking": "Strong\u2014both major names ALFA",
-    "Energy": "Weak\u2014both names UNDERPERFORM",
+    "Energy": "UNDERPERFORM",
     "Retail": "Mixed\u2014AMZN FAIR, HD/WMT UNDERPERFORM",
-    "Technology": "Moderate risk; cautious positioning",
+    "Technology": "FAIR",
     "Pharmaceuticals": "Divergent\u2014LLY ALFA vs JNJ FAIR",
     "Healthcare": "Under pressure\u2014UNH UNDERPERFORM with High risk"
   },
@@ -40,7 +40,16 @@
       "UNH"
     ],
     "LowBRF_HighBDR": "NVDA, XOM show Low risk but weaker grades\u2014valuation-driven",
-    "HighBRF": "UNH, HD flagged High risk\u2014caution warranted"
+    "HighBRF": "UNH, HD flagged High risk\u2014caution warranted",
+    "lowBRF_lowBDR": [
+      "NVDA"
+    ],
+    "moderateBRF": [
+      "AAPL"
+    ],
+    "highBDR_lowBRF": [
+      "XOM"
+    ]
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
@@ -51,7 +60,8 @@
     "Run #4: Financials and big tech leading; energy and traditional retail lagging",
     "Risk-off rotation visible in UNH, HD downgrades",
     "Risk-on regime: defensives underperforming, financials and growth leading",
-    "Energy sector out of favor despite low volatility"
+    "Energy sector out of favor despite low volatility",
+    "2026-05-20: Tech/Semis holding FAIR; Energy weak; no prior baseline\u2014first run."
   ],
   "topPicksHistory": [
     {
@@ -108,6 +118,12 @@
         "GOOGL",
         "LLY"
       ]
+    },
+    {
+      "date": "2026-05-20",
+      "top": "NVDA",
+      "grade": "FAIR",
+      "price": 224.4
     }
   ],
   "analyzedTickers": {
