@@ -56,7 +56,7 @@ def load_tickers(script_dir: Path, override: bool) -> list[str]:
 def analyze_ticker(ticker: str) -> dict:
     resp = requests.post(
         ANALYZE_URL,
-        json={"ticker": ticker, "narrate": False},
+        json={"ticker": ticker, "narrate": False, "cached": True},
         headers={"Content-Type": "application/json"},
         timeout=ANALYZE_TIMEOUT,
     )
