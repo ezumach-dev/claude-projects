@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-20",
-  "runCount": 6,
+  "lastUpdated": "2026-05-21",
+  "runCount": 7,
   "sectorPatterns": {
-    "Semiconductors": "FAIR",
+    "Semiconductors": "NVDA ALFA, lowest BRF among tech-adjacent",
     "Media": "Strong\u2014META/GOOGL top-ranked",
-    "Banking": "Strong\u2014both major names ALFA",
-    "Energy": "UNDERPERFORM",
-    "Retail": "Mixed\u2014AMZN FAIR, HD/WMT UNDERPERFORM",
+    "Banking": "ALFA cluster (JPM, BAC) with BDR 9, Moderate BRF",
+    "Energy": "UNDERPERFORM cluster (XOM, CVX) with BDR 19-21",
+    "Retail": "Split: AMZN FAIR vs HD/WMT UNDERPERFORM",
     "Technology": "FAIR",
     "Pharmaceuticals": "Divergent\u2014LLY ALFA vs JNJ FAIR",
     "Healthcare": "Under pressure\u2014UNH UNDERPERFORM with High risk"
@@ -49,6 +49,15 @@
     ],
     "highBDR_lowBRF": [
       "XOM"
+    ],
+    "Low BRF + ALFA": [
+      "META",
+      "NVDA",
+      "GOOGL"
+    ],
+    "High BRF": [
+      "UNH",
+      "HD"
     ]
   },
   "marketConditionNotes": [
@@ -61,7 +70,8 @@
     "Risk-off rotation visible in UNH, HD downgrades",
     "Risk-on regime: defensives underperforming, financials and growth leading",
     "Energy sector out of favor despite low volatility",
-    "2026-05-20: Tech/Semis holding FAIR; Energy weak; no prior baseline\u2014first run."
+    "2026-05-20: Tech/Semis holding FAIR; Energy weak; no prior baseline\u2014first run.",
+    "Run #7: Defensive sectors (Consumer, Pharma) mixed; cyclicals (Banking) outperforming Energy"
   ],
   "topPicksHistory": [
     {
@@ -124,10 +134,19 @@
       "top": "NVDA",
       "grade": "FAIR",
       "price": 224.4
+    },
+    {
+      "run": 7,
+      "date": "2026-05-21",
+      "top3": [
+        "META",
+        "JPM",
+        "BAC"
+      ]
     }
   ],
   "analyzedTickers": {
-    "NVDA": "FAIR",
+    "NVDA": "ALFA",
     "META": "ALFA",
     "MSFT": "ALFA",
     "GOOGL": "ALFA",
