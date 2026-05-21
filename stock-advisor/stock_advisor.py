@@ -97,12 +97,11 @@ def send_sms(ranked: list[dict], today: str) -> None:
         log("PHASE4b", "skipped: Twilio SMS env vars missing (need TWILIO_SMS_FROM + recipient)")
         return
 
-    top3 = ranked[:3]
-    picks = ", ".join(f"{r['ticker']} ({r.get('finalGrade','?')})" for r in top3) if top3 else "no picks"
-    body = (
-        f"StockAdvaisor {today}: Top 3 — {picks}. "
-        f"{len(ranked)} analyzed. Full report coming via email."
-    )
+    # Plain delivery-confirmation message — contains no ticker symbols, no
+    # ratings, no investment language. This format complies with TCR's forbidden-
+    # content rules for SMS (the full report content lives only in the email).
+    notify_email = (os.environ.get("NOTIFY_EMAIL") or "your email").strip()
+    body = f"Your {today} StockAdvaisor daily analysis was sent to: {notify_email}"
 
     base = f"https://api.twilio.com/2010-04-01/Accounts/{sid}/Messages"
     resp = requests.post(
