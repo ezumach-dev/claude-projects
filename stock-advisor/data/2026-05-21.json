@@ -1,0 +1,180 @@
+{
+  "date": "2026-05-21",
+  "stageA": false,
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "GOOGL",
+    "META",
+    "AMZN",
+    "TSLA",
+    "JPM",
+    "BAC",
+    "V",
+    "UNH",
+    "JNJ",
+    "LLY",
+    "XOM",
+    "CVX",
+    "PG",
+    "KO",
+    "WMT",
+    "HD",
+    "CAT"
+  ],
+  "results": [
+    {
+      "ticker": "BAC",
+      "company": "Bank of America Corp",
+      "sector": "Banking",
+      "currentPrice": 50.85,
+      "bdrGrade": "ALFA",
+      "bdrScore": 8,
+      "brfLevel": "Moderate",
+      "finalGrade": "ALFA"
+    },
+    {
+      "ticker": "META",
+      "company": "Meta Platforms Inc",
+      "sector": "Media",
+      "currentPrice": 601.06,
+      "bdrGrade": "ALFA",
+      "bdrScore": 9,
+      "brfLevel": "Low",
+      "finalGrade": "ALFA"
+    },
+    {
+      "ticker": "JPM",
+      "company": "JPMorgan Chase & Co",
+      "sector": "Banking",
+      "currentPrice": 301.18,
+      "bdrGrade": "ALFA",
+      "bdrScore": 9,
+      "brfLevel": "Moderate",
+      "finalGrade": "ALFA"
+    },
+    {
+      "ticker": "MSFT",
+      "company": "Microsoft Corp",
+      "sector": "Technology",
+      "currentPrice": 417.09,
+      "bdrGrade": "ALFA",
+      "bdrScore": 10,
+      "brfLevel": "Moderate",
+      "finalGrade": "ALFA"
+    },
+    {
+      "ticker": "NVDA",
+      "company": "NVIDIA Corp",
+      "sector": "Semiconductors",
+      "currentPrice": 219.55,
+      "bdrGrade": "ALFA",
+      "bdrScore": 10,
+      "brfLevel": "Low",
+      "finalGrade": "ALFA"
+    },
+    {
+      "ticker": "GOOGL",
+      "company": "Alphabet Inc",
+      "sector": "Media",
+      "currentPrice": 389.07,
+      "bdrGrade": "ALFA",
+      "bdrScore": 10,
+      "brfLevel": "Low",
+      "finalGrade": "ALFA"
+    },
+    {
+      "ticker": "AMZN",
+      "company": "Amazon.com Inc",
+      "sector": "Retail",
+      "currentPrice": 265.15,
+      "bdrGrade": "FAIR",
+      "bdrScore": 11,
+      "brfLevel": "Low",
+      "finalGrade": "FAIR"
+    },
+    {
+      "ticker": "V",
+      "company": "Visa Inc",
+      "sector": "Financial Services",
+      "currentPrice": 330.97,
+      "bdrGrade": "FAIR",
+      "bdrScore": 11,
+      "brfLevel": "Moderate",
+      "finalGrade": "FAIR"
+    },
+    {
+      "ticker": "AAPL",
+      "company": "Apple Inc",
+      "sector": "Technology",
+      "currentPrice": 303.57,
+      "bdrGrade": "FAIR",
+      "bdrScore": 14,
+      "brfLevel": "Moderate",
+      "finalGrade": "FAIR"
+    },
+    {
+      "ticker": "TSLA",
+      "company": "Tesla Inc",
+      "sector": "Automobiles",
+      "currentPrice": 417.39,
+      "bdrGrade": "UNDERPERFORM",
+      "bdrScore": 18,
+      "brfLevel": "Moderate",
+      "finalGrade": "UNDERPERFORM"
+    }
+  ],
+  "errors": [
+    {
+      "ticker": "UNH",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    },
+    {
+      "ticker": "JNJ",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    },
+    {
+      "ticker": "LLY",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    },
+    {
+      "ticker": "XOM",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    },
+    {
+      "ticker": "CVX",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    },
+    {
+      "ticker": "PG",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    },
+    {
+      "ticker": "KO",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    },
+    {
+      "ticker": "WMT",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    },
+    {
+      "ticker": "HD",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    },
+    {
+      "ticker": "CAT",
+      "phase": "PHASE2",
+      "error": "HTTP 429: {\"error\":\"Too many requests. Please wait 60 seconds.\",\"code\":\"RATE_LIMIT\"}"
+    }
+  ]
+}
