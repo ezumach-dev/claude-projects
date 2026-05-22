@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-21",
-  "runCount": 7,
+  "lastUpdated": "2026-05-22",
+  "runCount": 8,
   "sectorPatterns": {
     "Semiconductors": "NVDA ALFA, lowest BRF among tech-adjacent",
     "Media": "Strong\u2014META/GOOGL top-ranked",
-    "Banking": "ALFA cluster (JPM, BAC) with BDR 9, Moderate BRF",
-    "Energy": "UNDERPERFORM cluster (XOM, CVX) with BDR 19-21",
+    "Banking": "Strong\u2014two ALFA names (JPM, BAC)",
+    "Energy": "Weak\u2014both names UNDERPERFORM",
     "Retail": "Split: AMZN FAIR vs HD/WMT UNDERPERFORM",
     "Technology": "FAIR",
-    "Pharmaceuticals": "Divergent\u2014LLY ALFA vs JNJ FAIR",
-    "Healthcare": "Under pressure\u2014UNH UNDERPERFORM with High risk"
+    "Pharmaceuticals": "Divergent: LLY ALFA vs sector peers",
+    "Healthcare": "UNH underperforming with High risk"
   },
   "modifierInsights": {
     "highBRFsectors": [
@@ -58,6 +58,15 @@
     "High BRF": [
       "UNH",
       "HD"
+    ],
+    "LowRiskALFA": [
+      "META",
+      "NVDA",
+      "GOOGL"
+    ],
+    "HighRiskUnderperform": [
+      "HD",
+      "UNH"
     ]
   },
   "marketConditionNotes": [
@@ -71,7 +80,10 @@
     "Risk-on regime: defensives underperforming, financials and growth leading",
     "Energy sector out of favor despite low volatility",
     "2026-05-20: Tech/Semis holding FAIR; Energy weak; no prior baseline\u2014first run.",
-    "Run #7: Defensive sectors (Consumer, Pharma) mixed; cyclicals (Banking) outperforming Energy"
+    "Run #7: Defensive sectors (Consumer, Pharma) mixed; cyclicals (Banking) outperforming Energy",
+    "AI/semiconductor momentum persists",
+    "Energy facing macro headwinds despite low volatility",
+    "Banking benefiting from rate environment"
   ],
   "topPicksHistory": [
     {
@@ -142,6 +154,19 @@
         "META",
         "JPM",
         "BAC"
+      ]
+    },
+    {
+      "run": 8,
+      "date": "2026-05-22",
+      "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "GOOGL",
+        "LLY"
       ]
     }
   ],
