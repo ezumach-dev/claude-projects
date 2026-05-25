@@ -1,0 +1,1 @@
+Routine ran 2026-05-25 but found no data file (`2026-05-25.json`) and no error file (`2026-05-25-ERROR.md`). The GitHub Action did not fire today. No analysis was performed and memory.json was not modified.
