@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-22",
-  "runCount": 8,
+  "lastUpdated": "2026-05-25",
+  "runCount": 9,
   "sectorPatterns": {
     "Semiconductors": "NVDA ALFA, lowest BRF among tech-adjacent",
     "Media": "Strong\u2014META/GOOGL top-ranked",
-    "Banking": "Strong\u2014two ALFA names (JPM, BAC)",
-    "Energy": "Weak\u2014both names UNDERPERFORM",
-    "Retail": "Split: AMZN FAIR vs HD/WMT UNDERPERFORM",
+    "Banking": "Strong\u2014both majors at ALFA",
+    "Energy": "Weak\u2014both majors at UNDERPERFORM",
+    "Retail": "Mixed\u2014e-commerce resilient, traditional retail underperforming",
     "Technology": "FAIR",
     "Pharmaceuticals": "Divergent: LLY ALFA vs sector peers",
-    "Healthcare": "UNH underperforming with High risk"
+    "Healthcare": "Divergent\u2014pharma strong, managed care weak"
   },
   "modifierInsights": {
     "highBRFsectors": [
@@ -67,6 +67,15 @@
     "HighRiskUnderperform": [
       "HD",
       "UNH"
+    ],
+    "LowBRF_ALFA": [
+      "META",
+      "NVDA",
+      "GOOGL"
+    ],
+    "HighBRF_UNDERPERFORM": [
+      "HD",
+      "UNH"
     ]
   },
   "marketConditionNotes": [
@@ -83,7 +92,9 @@
     "Run #7: Defensive sectors (Consumer, Pharma) mixed; cyclicals (Banking) outperforming Energy",
     "AI/semiconductor momentum persists",
     "Energy facing macro headwinds despite low volatility",
-    "Banking benefiting from rate environment"
+    "Banking benefiting from rate environment",
+    "Risk-on tilt toward growth tech and financials",
+    "Defensive sectors (energy, traditional retail) lagging"
   ],
   "topPicksHistory": [
     {
@@ -167,6 +178,16 @@
         "NVDA",
         "GOOGL",
         "LLY"
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "tickers": [
+        "META",
+        "NVDA",
+        "JPM",
+        "BAC",
+        "GOOGL"
       ]
     }
   ],
