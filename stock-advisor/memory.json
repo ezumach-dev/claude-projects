@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-05-25",
-  "runCount": 9,
+  "lastUpdated": "2026-05-26",
+  "runCount": 10,
   "sectorPatterns": {
     "Semiconductors": "NVDA ALFA, lowest BRF among tech-adjacent",
     "Media": "Strong\u2014META/GOOGL top-ranked",
-    "Banking": "Strong\u2014both majors at ALFA",
-    "Energy": "Weak\u2014both majors at UNDERPERFORM",
-    "Retail": "Mixed\u2014e-commerce resilient, traditional retail underperforming",
-    "Technology": "FAIR",
+    "Banking": "Strong\u2014both tracked names at ALFA, BDR 9",
+    "Energy": "Weak\u2014all names UNDERPERFORM, BDR 18-21",
+    "Retail": "Divergent\u2014AMZN FAIR, HD/WMT UNDERPERFORM",
+    "Technology": "Split\u2014MSFT ALFA, AAPL lagging at FAIR",
     "Pharmaceuticals": "Divergent: LLY ALFA vs sector peers",
     "Healthcare": "Divergent\u2014pharma strong, managed care weak"
   },
@@ -33,6 +33,7 @@
     "BDR_BRF_correlation": "Lower BDR correlates with better grades in current batch",
     "lowRiskALFA": [
       "META",
+      "NVDA",
       "GOOGL"
     ],
     "highRiskUnderperform": [
@@ -76,6 +77,10 @@
     "HighBRF_UNDERPERFORM": [
       "HD",
       "UNH"
+    ],
+    "highRiskUNDERPERFORM": [
+      "UNH",
+      "HD"
     ]
   },
   "marketConditionNotes": [
@@ -94,7 +99,10 @@
     "Energy facing macro headwinds despite low volatility",
     "Banking benefiting from rate environment",
     "Risk-on tilt toward growth tech and financials",
-    "Defensive sectors (energy, traditional retail) lagging"
+    "Defensive sectors (energy, traditional retail) lagging",
+    "Financials outperforming; energy under pressure",
+    "Pharma (LLY) favored over managed care (UNH)",
+    "E-commerce resilient vs brick-and-mortar retail"
   ],
   "topPicksHistory": [
     {
@@ -188,6 +196,19 @@
         "JPM",
         "BAC",
         "GOOGL"
+      ]
+    },
+    {
+      "run": 10,
+      "date": "2026-05-26",
+      "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "GOOGL",
+        "LLY"
       ]
     }
   ],
