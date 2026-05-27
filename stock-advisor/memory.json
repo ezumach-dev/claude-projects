@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-05-26",
-  "runCount": 10,
+  "lastUpdated": "2026-05-27",
+  "runCount": 11,
   "sectorPatterns": {
     "Semiconductors": "NVDA ALFA, lowest BRF among tech-adjacent",
-    "Media": "Strong\u2014META/GOOGL top-ranked",
-    "Banking": "Strong\u2014both tracked names at ALFA, BDR 9",
-    "Energy": "Weak\u2014all names UNDERPERFORM, BDR 18-21",
-    "Retail": "Divergent\u2014AMZN FAIR, HD/WMT UNDERPERFORM",
+    "Media": "Strong\u2014META/GOOGL ALFA with Low BRF",
+    "Banking": "Strong\u2014both tickers ALFA, BDR 9",
+    "Energy": "Weak\u2014both tickers UNDERPERFORM, BDR 18\u201321",
+    "Retail": "Mixed\u2014AMZN FAIR vs HD/WMT UNDERPERFORM",
     "Technology": "Split\u2014MSFT ALFA, AAPL lagging at FAIR",
-    "Pharmaceuticals": "Divergent: LLY ALFA vs sector peers",
+    "Pharmaceuticals": "Positive\u2014LLY ALFA",
     "Healthcare": "Divergent\u2014pharma strong, managed care weak"
   },
   "modifierInsights": {
@@ -81,6 +81,15 @@
     "highRiskUNDERPERFORM": [
       "UNH",
       "HD"
+    ],
+    "lowBRF_highGrade": [
+      "META",
+      "NVDA",
+      "GOOGL"
+    ],
+    "highBRF_lowGrade": [
+      "UNH",
+      "HD"
     ]
   },
   "marketConditionNotes": [
@@ -102,7 +111,10 @@
     "Defensive sectors (energy, traditional retail) lagging",
     "Financials outperforming; energy under pressure",
     "Pharma (LLY) favored over managed care (UNH)",
-    "E-commerce resilient vs brick-and-mortar retail"
+    "E-commerce resilient vs brick-and-mortar retail",
+    "Financials and semiconductors favored in current cycle",
+    "Energy sector facing broad-based underperformance",
+    "Risk appetite appears moderate\u2014low BRF names clustering at top"
   ],
   "topPicksHistory": [
     {
@@ -210,6 +222,18 @@
         "GOOGL",
         "LLY"
       ]
+    },
+    {
+      "date": "2026-05-27",
+      "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "GOOGL",
+        "LLY"
+      ]
     }
   ],
   "analyzedTickers": {
@@ -225,7 +249,7 @@
     "V": "FAIR",
     "JNJ": "FAIR",
     "CVX": "UNDERPERFORM",
-    "PG": "FAIR",
+    "PG": "UNDERPERFORM",
     "KO": "FAIR",
     "HD": "UNDERPERFORM",
     "AMZN": "FAIR",
