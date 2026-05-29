@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-27",
-  "runCount": 11,
+  "lastUpdated": "2026-05-29",
+  "runCount": 12,
   "sectorPatterns": {
     "Semiconductors": "NVDA ALFA, lowest BRF among tech-adjacent",
-    "Media": "Strong\u2014META/GOOGL ALFA with Low BRF",
-    "Banking": "Strong\u2014both tickers ALFA, BDR 9",
-    "Energy": "Weak\u2014both tickers UNDERPERFORM, BDR 18\u201321",
-    "Retail": "Mixed\u2014AMZN FAIR vs HD/WMT UNDERPERFORM",
+    "Media": "ALFA leaders (META, GOOGL) with low BRF",
+    "Banking": "ALFA cluster (JPM, BAC) with moderate BRF",
+    "Energy": "UNDERPERFORM cluster (XOM, CVX)",
+    "Retail": "Split: AMZN FAIR vs HD/WMT UNDERPERFORM",
     "Technology": "Split\u2014MSFT ALFA, AAPL lagging at FAIR",
     "Pharmaceuticals": "Positive\u2014LLY ALFA",
     "Healthcare": "Divergent\u2014pharma strong, managed care weak"
@@ -90,6 +90,15 @@
     "highBRF_lowGrade": [
       "UNH",
       "HD"
+    ],
+    "highBRF": [
+      "UNH",
+      "HD"
+    ],
+    "lowBRF_ALFA": [
+      "META",
+      "NVDA",
+      "GOOGL"
     ]
   },
   "marketConditionNotes": [
@@ -114,7 +123,9 @@
     "E-commerce resilient vs brick-and-mortar retail",
     "Financials and semiconductors favored in current cycle",
     "Energy sector facing broad-based underperformance",
-    "Risk appetite appears moderate\u2014low BRF names clustering at top"
+    "Risk appetite appears moderate\u2014low BRF names clustering at top",
+    "Tech/Media/Semiconductors favored over cyclicals and energy",
+    "Traditional retail under pressure; e-commerce resilient"
   ],
   "topPicksHistory": [
     {
@@ -234,12 +245,23 @@
         "GOOGL",
         "LLY"
       ]
+    },
+    {
+      "date": "2026-05-29",
+      "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "NVDA",
+        "GOOGL",
+        "LLY"
+      ]
     }
   ],
   "analyzedTickers": {
     "NVDA": "ALFA",
     "META": "ALFA",
-    "MSFT": "ALFA",
+    "MSFT": "FAIR",
     "GOOGL": "ALFA",
     "UNH": "UNDERPERFORM",
     "XOM": "UNDERPERFORM",
@@ -249,7 +271,7 @@
     "V": "FAIR",
     "JNJ": "FAIR",
     "CVX": "UNDERPERFORM",
-    "PG": "UNDERPERFORM",
+    "PG": "FAIR",
     "KO": "FAIR",
     "HD": "UNDERPERFORM",
     "AMZN": "FAIR",
