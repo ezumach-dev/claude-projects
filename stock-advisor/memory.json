@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-05-29",
-  "runCount": 12,
+  "lastUpdated": "2026-06-01",
+  "runCount": 13,
   "sectorPatterns": {
     "Semiconductors": "NVDA ALFA, lowest BRF among tech-adjacent",
     "Media": "ALFA leaders (META, GOOGL) with low BRF",
-    "Banking": "ALFA cluster (JPM, BAC) with moderate BRF",
-    "Energy": "UNDERPERFORM cluster (XOM, CVX)",
-    "Retail": "Split: AMZN FAIR vs HD/WMT UNDERPERFORM",
+    "Banking": "Strong; multiple ALFA grades",
+    "Energy": "Weak; sector-wide UNDERPERFORM despite mixed BRF",
+    "Retail": "Bifurcated; e-commerce leads, traditional lags",
     "Technology": "Split\u2014MSFT ALFA, AAPL lagging at FAIR",
     "Pharmaceuticals": "Positive\u2014LLY ALFA",
     "Healthcare": "Divergent\u2014pharma strong, managed care weak"
@@ -99,7 +99,9 @@
       "META",
       "NVDA",
       "GOOGL"
-    ]
+    ],
+    "lowBRF_highBDR": "XOM anomaly\u2014low risk but still UNDERPERFORM suggests macro override",
+    "highBRF_cluster": "UNH, HD flagged; idiosyncratic risks elevated"
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
@@ -125,7 +127,9 @@
     "Energy sector facing broad-based underperformance",
     "Risk appetite appears moderate\u2014low BRF names clustering at top",
     "Tech/Media/Semiconductors favored over cyclicals and energy",
-    "Traditional retail under pressure; e-commerce resilient"
+    "Traditional retail under pressure; e-commerce resilient",
+    "Risk-on tilt toward tech/media with ALFA concentration",
+    "Defensive sectors (Beverages, Consumer Products) stuck at FAIR mid-tier"
   ],
   "topPicksHistory": [
     {
@@ -249,6 +253,17 @@
     {
       "date": "2026-05-29",
       "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "NVDA",
+        "GOOGL",
+        "LLY"
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "tickers": [
         "META",
         "JPM",
         "BAC",
