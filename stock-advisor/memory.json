@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-06-04",
-  "runCount": 16,
+  "lastUpdated": "2026-06-08",
+  "runCount": 17,
   "sectorPatterns": {
-    "Semiconductors": "Premium\u2014NVDA ALFA with Low risk",
+    "Semiconductors": "Strong\u2014NVDA ALFA, BDR 10, Low BRF",
     "Media": "Outperforming tech\u2014META/GOOGL ALFA",
-    "Banking": "Strong\u2014both major banks ALFA",
-    "Energy": "Weak\u2014structural underperformance",
-    "Retail": "Bifurcated\u2014e-commerce resilient, brick-and-mortar pressured",
-    "Technology": "Split\u2014MSFT ALFA, AAPL lagging at FAIR",
+    "Banking": "Strong\u2014both names ALFA, BDR 9",
+    "Energy": "Underperform\u2014XOM/CVX BDR 18-21",
+    "Retail": "Weak\u2014all three FAIR or below",
+    "Technology": "Mixed\u2014MSFT ALFA, AAPL FAIR",
     "Pharmaceuticals": "Split\u2014LLY strong, sector not uniform",
     "Healthcare": "Divergent\u2014pharma strong, managed care weak"
   },
@@ -42,9 +42,7 @@
     ],
     "LowBRF_HighBDR": "NVDA, XOM show Low risk but weaker grades\u2014valuation-driven",
     "HighBRF": "UNH, HD flagged High risk\u2014caution warranted",
-    "lowBRF_lowBDR": [
-      "NVDA"
-    ],
+    "lowBRF_lowBDR": "Best risk-reward profile (META, NVDA, GOOGL)",
     "moderateBRF": [
       "AAPL"
     ],
@@ -100,7 +98,7 @@
       "NVDA",
       "GOOGL"
     ],
-    "lowBRF_highBDR": "XOM anomaly: low risk yet BDR 18 suggests fundamental rather than volatility concerns",
+    "lowBRF_highBDR": "Indicates stable but structurally challenged (XOM, JNJ)",
     "highBRF_cluster": "HD and UNH both High BRF in UNDERPERFORM, elevated caution warranted"
   },
   "marketConditionNotes": [
@@ -136,7 +134,9 @@
     "Cyclical energy underperforming despite commodity exposure",
     "Ad-driven tech outpacing enterprise software",
     "Consumer defensive names (KO, PG, JNJ) clustered mid-FAIR, not safe-haven outperformers",
-    "Semiconductors (NVDA) remain ALFA despite elevated BDR 10"
+    "Semiconductors (NVDA) remain ALFA despite elevated BDR 10",
+    "Defensive sectors (Energy, Consumer Staples) lagging growth/cyclical names",
+    "Financials outperforming despite moderate risk flag"
   ],
   "topPicksHistory": [
     {
@@ -308,12 +308,21 @@
         "GOOGL",
         "LLY"
       ]
+    },
+    {
+      "run": 17,
+      "date": "2026-06-08",
+      "top3": [
+        "META",
+        "JPM",
+        "BAC"
+      ]
     }
   ],
   "analyzedTickers": {
     "NVDA": "ALFA",
     "META": "ALFA",
-    "MSFT": "FAIR",
+    "MSFT": "ALFA",
     "GOOGL": "ALFA",
     "UNH": "UNDERPERFORM",
     "XOM": "UNDERPERFORM",
@@ -323,7 +332,7 @@
     "V": "FAIR",
     "JNJ": "FAIR",
     "CVX": "UNDERPERFORM",
-    "PG": "FAIR",
+    "PG": "UNDERPERFORM",
     "KO": "FAIR",
     "HD": "UNDERPERFORM",
     "AMZN": "FAIR",
