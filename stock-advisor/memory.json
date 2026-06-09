@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-06-08",
-  "runCount": 17,
+  "lastUpdated": "2026-06-09",
+  "runCount": 18,
   "sectorPatterns": {
     "Semiconductors": "Strong\u2014NVDA ALFA, BDR 10, Low BRF",
     "Media": "Outperforming tech\u2014META/GOOGL ALFA",
-    "Banking": "Strong\u2014both names ALFA, BDR 9",
-    "Energy": "Underperform\u2014XOM/CVX BDR 18-21",
-    "Retail": "Weak\u2014all three FAIR or below",
+    "Banking": "Strong; both majors ALFA-graded",
+    "Energy": "Weak; both majors UNDERPERFORM",
+    "Retail": "Mixed to weak; AMZN FAIR, HD/WMT UNDERPERFORM",
     "Technology": "Mixed\u2014MSFT ALFA, AAPL FAIR",
-    "Pharmaceuticals": "Split\u2014LLY strong, sector not uniform",
+    "Pharmaceuticals": "Split; LLY outperforming JNJ",
     "Healthcare": "Divergent\u2014pharma strong, managed care weak"
   },
   "modifierInsights": {
@@ -41,7 +41,10 @@
       "UNH"
     ],
     "LowBRF_HighBDR": "NVDA, XOM show Low risk but weaker grades\u2014valuation-driven",
-    "HighBRF": "UNH, HD flagged High risk\u2014caution warranted",
+    "HighBRF": [
+      "UNH",
+      "HD"
+    ],
     "lowBRF_lowBDR": "Best risk-reward profile (META, NVDA, GOOGL)",
     "moderateBRF": [
       "AAPL"
@@ -136,7 +139,9 @@
     "Consumer defensive names (KO, PG, JNJ) clustered mid-FAIR, not safe-haven outperformers",
     "Semiconductors (NVDA) remain ALFA despite elevated BDR 10",
     "Defensive sectors (Energy, Consumer Staples) lagging growth/cyclical names",
-    "Financials outperforming despite moderate risk flag"
+    "Financials outperforming despite moderate risk flag",
+    "Cyclicals (Energy, Retail) under pressure",
+    "Quality growth (NVDA, GOOGL, LLY) favored"
   ],
   "topPicksHistory": [
     {
@@ -316,6 +321,17 @@
         "META",
         "JPM",
         "BAC"
+      ]
+    },
+    {
+      "date": "2026-06-09",
+      "tickers": [
+        "META",
+        "JPM",
+        "BAC",
+        "NVDA",
+        "GOOGL",
+        "LLY"
       ]
     }
   ],
