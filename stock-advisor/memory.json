@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-06-09",
-  "runCount": 18,
+  "lastUpdated": "2026-06-10",
+  "runCount": 19,
   "sectorPatterns": {
     "Semiconductors": "Strong\u2014NVDA ALFA, BDR 10, Low BRF",
-    "Media": "Outperforming tech\u2014META/GOOGL ALFA",
-    "Banking": "Strong; both majors ALFA-graded",
-    "Energy": "Weak; both majors UNDERPERFORM",
-    "Retail": "Mixed to weak; AMZN FAIR, HD/WMT UNDERPERFORM",
+    "Media": "Strong - ALFA grades with low risk",
+    "Banking": "Strong - both majors ALFA",
+    "Energy": "Weak - consistent UNDERPERFORM",
+    "Retail": "Mixed - AMZN outperforms traditional retail",
     "Technology": "Mixed\u2014MSFT ALFA, AAPL FAIR",
     "Pharmaceuticals": "Split; LLY outperforming JNJ",
-    "Healthcare": "Divergent\u2014pharma strong, managed care weak"
+    "Healthcare": "Bifurcated - Pharma strong, managed care weak"
   },
   "modifierInsights": {
     "highBRFsectors": [
@@ -102,7 +102,18 @@
       "GOOGL"
     ],
     "lowBRF_highBDR": "Indicates stable but structurally challenged (XOM, JNJ)",
-    "highBRF_cluster": "HD and UNH both High BRF in UNDERPERFORM, elevated caution warranted"
+    "highBRF_cluster": "HD and UNH both High BRF in UNDERPERFORM, elevated caution warranted",
+    "lowBRF_highValue": [
+      "META",
+      "NVDA",
+      "GOOGL",
+      "JNJ",
+      "KO"
+    ],
+    "highBRF_caution": [
+      "UNH",
+      "HD"
+    ]
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
@@ -141,7 +152,9 @@
     "Defensive sectors (Energy, Consumer Staples) lagging growth/cyclical names",
     "Financials outperforming despite moderate risk flag",
     "Cyclicals (Energy, Retail) under pressure",
-    "Quality growth (NVDA, GOOGL, LLY) favored"
+    "Quality growth (NVDA, GOOGL, LLY) favored",
+    "Run #19: Financials and big tech leading; energy lagging",
+    "Risk-adjusted leaders: META, NVDA, GOOGL (ALFA + Low BRF)"
   ],
   "topPicksHistory": [
     {
@@ -332,6 +345,15 @@
         "NVDA",
         "GOOGL",
         "LLY"
+      ]
+    },
+    {
+      "run": 19,
+      "date": "2026-06-10",
+      "top3": [
+        "META",
+        "JPM",
+        "BAC"
       ]
     }
   ],
