@@ -1,0 +1,129 @@
+{
+  "date": "2026-06-11",
+  "stageA": false,
+  "tickers": [
+    "AAPL",
+    "MSFT",
+    "NVDA",
+    "GOOGL",
+    "META",
+    "AMZN",
+    "TSLA",
+    "JPM",
+    "BAC",
+    "V",
+    "UNH",
+    "JNJ",
+    "LLY",
+    "XOM",
+    "CVX",
+    "PG",
+    "KO",
+    "WMT",
+    "HD",
+    "CAT"
+  ],
+  "results": [],
+  "errors": [
+    {
+      "ticker": "AAPL",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "MSFT",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "NVDA",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "GOOGL",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "META",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "AMZN",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "TSLA",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "JPM",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "BAC",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "V",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "UNH",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "JNJ",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "LLY",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "XOM",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "CVX",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "PG",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "KO",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "WMT",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "HD",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    },
+    {
+      "ticker": "CAT",
+      "phase": "PHASE2",
+      "error": "HTTP 403: <!DOCTYPE html><html lang=\"en\"><head><meta charset=\"UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta http-equiv=\"refresh\" content=\"30\"><link rel=\"preconnect\" href=\"ht"
+    }
+  ]
+}
