@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-06-12",
-  "runCount": 20,
+  "lastUpdated": "2026-06-15",
+  "runCount": 21,
   "sectorPatterns": {
     "Semiconductors": "Strong\u2014NVDA ALFA, BDR 10, Low BRF",
     "Media": "Strong - ALFA grades with low risk",
-    "Banking": "Strong ALFA representation (JPM, BAC); moderate BRF tolerated at low BDR",
-    "Energy": "Consistent UNDERPERFORM despite mixed BRF; high BDR persistent",
-    "Retail": "Bifurcated\u2014e-commerce (AMZN) outperforms brick-and-mortar (HD, WMT)",
+    "Banking": "Strong\u2014both tracked names at ALFA",
+    "Energy": "Weak\u2014both names UNDERPERFORM",
+    "Retail": "Mixed to weak\u2014AMZN FAIR, HD/WMT UNDERPERFORM",
     "Technology": "Reliable ALFA tier with BDR 10-14 spread",
-    "Pharmaceuticals": "Split; LLY outperforming JNJ",
+    "Pharmaceuticals": "Split\u2014growth (LLY) outperforming diversified (JNJ)",
     "Healthcare": "Bifurcated - Pharma strong, managed care weak"
   },
   "modifierInsights": {
@@ -115,7 +115,8 @@
       "HD"
     ],
     "BRF_Low_not_sufficient": "XOM shows Low BRF but still UNDERPERFORM due to BDR 18",
-    "BDR_threshold": "BDR \u226410 correlates strongly with ALFA; 11-14 maps to FAIR"
+    "BDR_threshold": "BDR \u226410 correlates strongly with ALFA; 11-14 maps to FAIR",
+    "lowBRF_notGuarantee": "Low BRF alone insufficient for top grades (see XOM, KO)"
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
@@ -158,7 +159,8 @@
     "Run #19: Financials and big tech leading; energy lagging",
     "Risk-adjusted leaders: META, NVDA, GOOGL (ALFA + Low BRF)",
     "Run #20 baseline established; all previous grades null",
-    "Growth and financials favored over defensive/commodity sectors"
+    "Growth and financials favored over defensive/commodity sectors",
+    "Run #21: AI/cloud tech and banking leading; energy and big-box retail lagging"
   ],
   "topPicksHistory": [
     {
@@ -373,6 +375,19 @@
         "AMZN",
         "LLY"
       ]
+    },
+    {
+      "run": 21,
+      "date": "2026-06-15",
+      "alfaTickers": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "GOOGL",
+        "LLY"
+      ]
     }
   ],
   "analyzedTickers": {
@@ -391,7 +406,7 @@
     "PG": "UNDERPERFORM",
     "KO": "FAIR",
     "HD": "UNDERPERFORM",
-    "AMZN": "ALFA",
+    "AMZN": "FAIR",
     "AAPL": "FAIR",
     "CAT": "FAIR",
     "TSLA": "UNDERPERFORM",
