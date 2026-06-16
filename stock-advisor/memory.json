@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-06-15",
-  "runCount": 21,
+  "lastUpdated": "2026-06-16",
+  "runCount": 22,
   "sectorPatterns": {
-    "Semiconductors": "Strong\u2014NVDA ALFA, BDR 10, Low BRF",
-    "Media": "Strong - ALFA grades with low risk",
-    "Banking": "Strong\u2014both tracked names at ALFA",
-    "Energy": "Weak\u2014both names UNDERPERFORM",
-    "Retail": "Mixed to weak\u2014AMZN FAIR, HD/WMT UNDERPERFORM",
+    "Semiconductors": "Strong (ALFA, Low BRF)",
+    "Media": "Strong (2 ALFA, Low BRF)",
+    "Banking": "Strong (2 ALFA)",
+    "Energy": "Weak (2 UNDERPERFORM)",
+    "Retail": "Mixed (AMZN FAIR vs HD/WMT UNDERPERFORM)",
     "Technology": "Reliable ALFA tier with BDR 10-14 spread",
     "Pharmaceuticals": "Split\u2014growth (LLY) outperforming diversified (JNJ)",
-    "Healthcare": "Bifurcated - Pharma strong, managed care weak"
+    "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
   },
   "modifierInsights": {
     "highBRFsectors": [
@@ -76,8 +76,8 @@
       "GOOGL"
     ],
     "HighBRF_UNDERPERFORM": [
-      "HD",
-      "UNH"
+      "UNH",
+      "HD"
     ],
     "highRiskUNDERPERFORM": [
       "UNH",
@@ -160,7 +160,9 @@
     "Risk-adjusted leaders: META, NVDA, GOOGL (ALFA + Low BRF)",
     "Run #20 baseline established; all previous grades null",
     "Growth and financials favored over defensive/commodity sectors",
-    "Run #21: AI/cloud tech and banking leading; energy and big-box retail lagging"
+    "Run #21: AI/cloud tech and banking leading; energy and big-box retail lagging",
+    "Risk-off tilt in cyclicals (Energy, traditional Retail)",
+    "Quality tech and financials favored"
   ],
   "topPicksHistory": [
     {
@@ -387,6 +389,15 @@
         "NVDA",
         "GOOGL",
         "LLY"
+      ]
+    },
+    {
+      "run": 22,
+      "date": "2026-06-16",
+      "top3": [
+        "META",
+        "JPM",
+        "BAC"
       ]
     }
   ],
