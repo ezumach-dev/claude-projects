@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-06-16",
-  "runCount": 22,
+  "lastUpdated": "2026-06-17",
+  "runCount": 23,
   "sectorPatterns": {
     "Semiconductors": "Strong (ALFA, Low BRF)",
     "Media": "Strong (2 ALFA, Low BRF)",
-    "Banking": "Strong (2 ALFA)",
-    "Energy": "Weak (2 UNDERPERFORM)",
-    "Retail": "Mixed (AMZN FAIR vs HD/WMT UNDERPERFORM)",
-    "Technology": "Reliable ALFA tier with BDR 10-14 spread",
-    "Pharmaceuticals": "Split\u2014growth (LLY) outperforming diversified (JNJ)",
+    "Banking": "Strong\u2014both majors at ALFA",
+    "Energy": "Weak\u2014both XOM and CVX UNDERPERFORM",
+    "Retail": "Mixed: AMZN FAIR, HD/WMT UNDERPERFORM",
+    "Technology": "Split: cloud/AI outperforming hardware",
+    "Pharmaceuticals": "Divergent: LLY strong, sector otherwise mixed",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
   },
   "modifierInsights": {
@@ -162,7 +162,9 @@
     "Growth and financials favored over defensive/commodity sectors",
     "Run #21: AI/cloud tech and banking leading; energy and big-box retail lagging",
     "Risk-off tilt in cyclicals (Energy, traditional Retail)",
-    "Quality tech and financials favored"
+    "Quality tech and financials favored",
+    "Risk-on regime: defensives lagging, growth leading",
+    "AI/semiconductor momentum intact"
   ],
   "topPicksHistory": [
     {
@@ -398,6 +400,19 @@
         "META",
         "JPM",
         "BAC"
+      ]
+    },
+    {
+      "run": 23,
+      "date": "2026-06-17",
+      "alfaTickers": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "GOOGL",
+        "LLY"
       ]
     }
   ],
