@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-06-19",
-  "runCount": 24,
+  "lastUpdated": "2026-06-23",
+  "runCount": 25,
   "sectorPatterns": {
     "Semiconductors": "Strong (ALFA, Low BRF)",
     "Media": "Strong (2 ALFA, Low BRF)",
-    "Banking": "Multi-stock ALFA presence; sector strength",
-    "Energy": "Uniform UNDERPERFORM; sector weakness",
-    "Retail": "Wide dispersion (FAIR to UNDERPERFORM)",
-    "Technology": "Split: cloud/AI outperforming hardware",
+    "Banking": "Strong\u2014dual ALFA (JPM, BAC)",
+    "Energy": "Weak\u2014dual UNDERPERFORM (XOM, CVX)",
+    "Retail": "Split\u2014AMZN ALFA vs HD/WMT UNDERPERFORM",
+    "Technology": "Mixed\u2014MSFT ALFA, AAPL FAIR",
     "Pharmaceuticals": "Divergent: LLY strong, sector otherwise mixed",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
   },
@@ -86,7 +86,8 @@
     "lowBRF_highGrade": [
       "META",
       "NVDA",
-      "GOOGL"
+      "GOOGL",
+      "AMZN"
     ],
     "highBRF_lowGrade": [
       "UNH",
@@ -166,7 +167,10 @@
     "Risk-on regime: defensives lagging, growth leading",
     "AI/semiconductor momentum intact",
     "Defensive sectors (Beverages, Consumer Products) clustered mid-tier FAIR/UNDERPERFORM",
-    "Growth tech (MSFT, NVDA, GOOGL) maintains ALFA despite elevated BDR 10"
+    "Growth tech (MSFT, NVDA, GOOGL) maintains ALFA despite elevated BDR 10",
+    "Financials and big-tech AI leaders favored",
+    "Traditional retail and energy sectors lagging",
+    "Risk aversion reflected in high-BRF underperformers"
   ],
   "topPicksHistory": [
     {
@@ -426,6 +430,20 @@
         "NVDA",
         "GOOGL"
       ]
+    },
+    {
+      "run": 25,
+      "date": "2026-06-23",
+      "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "GOOGL",
+        "AMZN",
+        "LLY"
+      ]
     }
   ],
   "analyzedTickers": {
@@ -444,7 +462,7 @@
     "PG": "UNDERPERFORM",
     "KO": "FAIR",
     "HD": "UNDERPERFORM",
-    "AMZN": "FAIR",
+    "AMZN": "ALFA",
     "AAPL": "FAIR",
     "CAT": "FAIR",
     "TSLA": "UNDERPERFORM",
