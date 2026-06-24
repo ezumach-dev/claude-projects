@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-23",
-  "runCount": 25,
+  "lastUpdated": "2026-06-24",
+  "runCount": 26,
   "sectorPatterns": {
     "Semiconductors": "Strong (ALFA, Low BRF)",
     "Media": "Strong (2 ALFA, Low BRF)",
-    "Banking": "Strong\u2014dual ALFA (JPM, BAC)",
-    "Energy": "Weak\u2014dual UNDERPERFORM (XOM, CVX)",
-    "Retail": "Split\u2014AMZN ALFA vs HD/WMT UNDERPERFORM",
+    "Banking": "Strong\u2014both tracked names ALFA",
+    "Energy": "Weak\u2014both names UNDERPERFORM",
+    "Retail": "Weak\u20142 of 3 UNDERPERFORM",
     "Technology": "Mixed\u2014MSFT ALFA, AAPL FAIR",
     "Pharmaceuticals": "Divergent: LLY strong, sector otherwise mixed",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
@@ -117,7 +117,11 @@
     ],
     "BRF_Low_not_sufficient": "XOM shows Low BRF but still UNDERPERFORM due to BDR 18",
     "BDR_threshold": "BDR \u226410 correlates strongly with ALFA; 11-14 maps to FAIR",
-    "lowBRF_notGuarantee": "Low BRF alone insufficient for top grades (see XOM, KO)"
+    "lowBRF_notGuarantee": "Low BRF alone insufficient for top grades (see XOM, KO)",
+    "highBRF_underperform": [
+      "UNH",
+      "HD"
+    ]
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
@@ -170,7 +174,9 @@
     "Growth tech (MSFT, NVDA, GOOGL) maintains ALFA despite elevated BDR 10",
     "Financials and big-tech AI leaders favored",
     "Traditional retail and energy sectors lagging",
-    "Risk aversion reflected in high-BRF underperformers"
+    "Risk aversion reflected in high-BRF underperformers",
+    "Run #26: Defensive sectors (Consumer Products, Retail, Energy) skewing UNDERPERFORM",
+    "Growth/Tech and Financials holding ALFA concentration"
   ],
   "topPicksHistory": [
     {
@@ -444,6 +450,15 @@
         "AMZN",
         "LLY"
       ]
+    },
+    {
+      "run": 26,
+      "date": "2026-06-24",
+      "top3": [
+        "META",
+        "JPM",
+        "BAC"
+      ]
     }
   ],
   "analyzedTickers": {
@@ -462,7 +477,7 @@
     "PG": "UNDERPERFORM",
     "KO": "FAIR",
     "HD": "UNDERPERFORM",
-    "AMZN": "ALFA",
+    "AMZN": "FAIR",
     "AAPL": "FAIR",
     "CAT": "FAIR",
     "TSLA": "UNDERPERFORM",
