@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-06-24",
-  "runCount": 26,
+  "lastUpdated": "2026-06-25",
+  "runCount": 27,
   "sectorPatterns": {
     "Semiconductors": "Strong (ALFA, Low BRF)",
     "Media": "Strong (2 ALFA, Low BRF)",
-    "Banking": "Strong\u2014both tracked names ALFA",
-    "Energy": "Weak\u2014both names UNDERPERFORM",
-    "Retail": "Weak\u20142 of 3 UNDERPERFORM",
-    "Technology": "Mixed\u2014MSFT ALFA, AAPL FAIR",
+    "Banking": "Sector strength\u2014both JPM and BAC at ALFA, BDR 9",
+    "Energy": "Uniform weakness\u2014XOM/CVX both UNDERPERFORM",
+    "Retail": "Bifurcated\u2014AMZN ALFA vs WMT/HD UNDERPERFORM",
+    "Technology": "Split\u2014MSFT ALFA, AAPL lagging at FAIR",
     "Pharmaceuticals": "Divergent: LLY strong, sector otherwise mixed",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
   },
@@ -41,10 +41,7 @@
       "UNH"
     ],
     "LowBRF_HighBDR": "NVDA, XOM show Low risk but weaker grades\u2014valuation-driven",
-    "HighBRF": [
-      "UNH",
-      "HD"
-    ],
+    "HighBRF": "Correlated with UNDERPERFORM (UNH, HD)",
     "lowBRF_lowBDR": "Best risk-reward profile (META, NVDA, GOOGL)",
     "moderateBRF": [
       "AAPL"
@@ -121,7 +118,8 @@
     "highBRF_underperform": [
       "UNH",
       "HD"
-    ]
+    ],
+    "LowBRF_LowBDR": "Best combo seen in META, NVDA, GOOGL, AMZN"
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
@@ -176,7 +174,9 @@
     "Traditional retail and energy sectors lagging",
     "Risk aversion reflected in high-BRF underperformers",
     "Run #26: Defensive sectors (Consumer Products, Retail, Energy) skewing UNDERPERFORM",
-    "Growth/Tech and Financials holding ALFA concentration"
+    "Growth/Tech and Financials holding ALFA concentration",
+    "ALFA cluster favors semiconductors, media, banking over consumer staples and energy",
+    "No previous grades available for comparison\u2014baseline run"
   ],
   "topPicksHistory": [
     {
@@ -459,6 +459,20 @@
         "JPM",
         "BAC"
       ]
+    },
+    {
+      "date": "2026-06-25",
+      "run": 27,
+      "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "GOOGL",
+        "AMZN",
+        "LLY"
+      ]
     }
   ],
   "analyzedTickers": {
@@ -477,7 +491,7 @@
     "PG": "UNDERPERFORM",
     "KO": "FAIR",
     "HD": "UNDERPERFORM",
-    "AMZN": "FAIR",
+    "AMZN": "ALFA",
     "AAPL": "FAIR",
     "CAT": "FAIR",
     "TSLA": "UNDERPERFORM",
