@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-06-29",
-  "runCount": 28,
+  "lastUpdated": "2026-07-01",
+  "runCount": 29,
   "sectorPatterns": {
     "Semiconductors": "Strong (ALFA, Low BRF)",
-    "Media": "Strong (2 ALFA, low BDR)",
-    "Banking": "Outperforming (2 ALFA)",
+    "Media": "Strong (2 ALFA)",
+    "Banking": "Strong (2 ALFA)",
     "Energy": "Weak (2 UNDERPERFORM)",
-    "Retail": "Weak (1 FAIR, 2 UNDERPERFORM)",
+    "Retail": "Mixed (1 FAIR, 2 UNDERPERFORM)",
     "Technology": "Split\u2014MSFT ALFA, AAPL lagging at FAIR",
     "Pharmaceuticals": "Divergent: LLY strong, sector otherwise mixed",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
@@ -83,8 +83,7 @@
     "lowBRF_highGrade": [
       "META",
       "NVDA",
-      "GOOGL",
-      "AMZN"
+      "GOOGL"
     ],
     "highBRF_lowGrade": [
       "UNH",
@@ -178,7 +177,8 @@
     "Growth/Tech and Financials holding ALFA concentration",
     "ALFA cluster favors semiconductors, media, banking over consumer staples and energy",
     "No previous grades available for comparison\u2014baseline run",
-    "Financials and select tech leading; defensive and cyclical sectors lagging"
+    "Financials and select tech leading; defensive and cyclical sectors lagging",
+    "2026-07-01: Financials and select tech outperforming; energy broadly weak"
   ],
   "topPicksHistory": [
     {
@@ -480,6 +480,17 @@
       "run": 28,
       "date": "2026-06-29",
       "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-07-01",
+      "alfaTickers": [
         "META",
         "JPM",
         "BAC",
