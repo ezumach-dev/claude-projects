@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-01",
-  "runCount": 29,
+  "lastUpdated": "2026-07-03",
+  "runCount": 30,
   "sectorPatterns": {
-    "Semiconductors": "Strong (ALFA, Low BRF)",
-    "Media": "Strong (2 ALFA)",
-    "Banking": "Strong (2 ALFA)",
-    "Energy": "Weak (2 UNDERPERFORM)",
-    "Retail": "Mixed (1 FAIR, 2 UNDERPERFORM)",
+    "Semiconductors": "Favorable - NVDA ALFA with low risk",
+    "Media": "Strong - META and GOOGL both ALFA",
+    "Banking": "Strong - both tracked names at ALFA/BDR 9",
+    "Energy": "Weak - both names UNDERPERFORM despite manageable risk",
+    "Retail": "Bifurcated - AMZN FAIR vs WMT/HD UNDERPERFORM",
     "Technology": "Split\u2014MSFT ALFA, AAPL lagging at FAIR",
     "Pharmaceuticals": "Divergent: LLY strong, sector otherwise mixed",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
@@ -119,7 +119,16 @@
       "HD"
     ],
     "LowBRF_LowBDR": "Best combo seen in META, NVDA, GOOGL, AMZN",
-    "High_BRF_correlation": "UNH and HD both High BRF and UNDERPERFORM"
+    "High_BRF_correlation": "UNH and HD both High BRF and UNDERPERFORM",
+    "highRiskFlags": [
+      "UNH",
+      "HD"
+    ],
+    "lowRiskAlfa": [
+      "META",
+      "NVDA",
+      "GOOGL"
+    ]
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
@@ -178,7 +187,8 @@
     "ALFA cluster favors semiconductors, media, banking over consumer staples and energy",
     "No previous grades available for comparison\u2014baseline run",
     "Financials and select tech leading; defensive and cyclical sectors lagging",
-    "2026-07-01: Financials and select tech outperforming; energy broadly weak"
+    "2026-07-01: Financials and select tech outperforming; energy broadly weak",
+    "2026-07-03: Financials and big tech leading; defensive consumer and energy lagging"
   ],
   "topPicksHistory": [
     {
@@ -495,6 +505,16 @@
         "JPM",
         "BAC",
         "MSFT",
+        "NVDA",
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-07-03",
+      "tickers": [
+        "META",
+        "JPM",
+        "BAC",
         "NVDA",
         "GOOGL"
       ]
