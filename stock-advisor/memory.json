@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-03",
-  "runCount": 30,
+  "lastUpdated": "2026-07-06",
+  "runCount": 31,
   "sectorPatterns": {
-    "Semiconductors": "Favorable - NVDA ALFA with low risk",
-    "Media": "Strong - META and GOOGL both ALFA",
-    "Banking": "Strong - both tracked names at ALFA/BDR 9",
-    "Energy": "Weak - both names UNDERPERFORM despite manageable risk",
-    "Retail": "Bifurcated - AMZN FAIR vs WMT/HD UNDERPERFORM",
+    "Semiconductors": "ALFA (NVDA); Low BRF",
+    "Media": "ALFA cluster (META, GOOGL); Low BRF",
+    "Banking": "ALFA cluster (JPM, BAC); Moderate BRF",
+    "Energy": "Uniform UNDERPERFORM (XOM, CVX)",
+    "Retail": "Wide dispersion\u2014AMZN FAIR vs WMT/HD UNDERPERFORM",
     "Technology": "Split\u2014MSFT ALFA, AAPL lagging at FAIR",
     "Pharmaceuticals": "Divergent: LLY strong, sector otherwise mixed",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
@@ -128,6 +128,15 @@
       "META",
       "NVDA",
       "GOOGL"
+    ],
+    "High_BRF_tickers": [
+      "UNH",
+      "HD"
+    ],
+    "Low_BRF_ALFA": [
+      "META",
+      "NVDA",
+      "GOOGL"
     ]
   },
   "marketConditionNotes": [
@@ -188,7 +197,9 @@
     "No previous grades available for comparison\u2014baseline run",
     "Financials and select tech leading; defensive and cyclical sectors lagging",
     "2026-07-01: Financials and select tech outperforming; energy broadly weak",
-    "2026-07-03: Financials and big tech leading; defensive consumer and energy lagging"
+    "2026-07-03: Financials and big tech leading; defensive consumer and energy lagging",
+    "Top-tier grades concentrated in Tech-adjacent and Financials",
+    "Defensive Consumer (PG, WMT) underperforming despite low vol environment"
   ],
   "topPicksHistory": [
     {
@@ -515,6 +526,18 @@
         "META",
         "JPM",
         "BAC",
+        "NVDA",
+        "GOOGL"
+      ]
+    },
+    {
+      "run": 31,
+      "date": "2026-07-06",
+      "alfaTickers": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
         "NVDA",
         "GOOGL"
       ]
