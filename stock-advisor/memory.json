@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-13",
-  "runCount": 36,
+  "lastUpdated": "2026-07-14",
+  "runCount": 37,
   "sectorPatterns": {
-    "Semiconductors": "NVDA ALFA, Low risk, BDR 10",
-    "Media": "ALFA strength (META, GOOGL); Low risk",
-    "Banking": "Strong\u2014both major banks at ALFA, BDR 9",
-    "Energy": "Weak\u2014sector-wide UNDERPERFORM",
-    "Retail": "Split\u2014e-commerce preferred over physical",
-    "Technology": "Mixed\u2014MSFT/NVDA/GOOGL favored over AAPL",
-    "Pharmaceuticals": "Divergent: LLY strong, sector otherwise mixed",
+    "Semiconductors": "Strong: NVDA ALFA",
+    "Media": "Strong: META/GOOGL both ALFA",
+    "Banking": "Strong: 2/2 ALFA",
+    "Energy": "Weak: XOM/CVX both UNDERPERFORM",
+    "Retail": "Split: AMZN FAIR, HD/WMT UNDERPERFORM",
+    "Technology": "Mixed: MSFT ALFA, AAPL FAIR",
+    "Pharmaceuticals": "Divergent: LLY ALFA, JNJ FAIR",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
   },
   "modifierInsights": {
@@ -77,8 +77,8 @@
       "HD"
     ],
     "highRiskUNDERPERFORM": [
-      "UNH",
-      "HD"
+      "HD",
+      "UNH"
     ],
     "lowBRF_highGrade": [
       "META",
@@ -223,7 +223,9 @@
     "Energy sector lagging despite stable fundamentals",
     "AI/cloud names outperforming traditional tech",
     "Financials showing strength despite rate environment",
-    "Defensive sectors (PG, KO) not rewarded with top grades"
+    "Defensive sectors (PG, KO) not rewarded with top grades",
+    "Financials and mega-cap tech leading; energy and traditional retail lagging",
+    "Low BRF correlates with higher grades in most cases"
   ],
   "topPicksHistory": [
     {
@@ -617,6 +619,19 @@
         "NVDA",
         "GOOGL"
       ]
+    },
+    {
+      "run": 37,
+      "date": "2026-07-14",
+      "topALFA": [
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "GOOGL",
+        "LLY"
+      ]
     }
   ],
   "analyzedTickers": {
@@ -628,7 +643,7 @@
     "XOM": "UNDERPERFORM",
     "JPM": "ALFA",
     "BAC": "ALFA",
-    "LLY": "FAIR",
+    "LLY": "ALFA",
     "V": "FAIR",
     "JNJ": "FAIR",
     "CVX": "UNDERPERFORM",
