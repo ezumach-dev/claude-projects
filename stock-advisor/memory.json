@@ -1,14 +1,14 @@
 {
-  "lastUpdated": "2026-07-14",
-  "runCount": 37,
+  "lastUpdated": "2026-07-15",
+  "runCount": 38,
   "sectorPatterns": {
     "Semiconductors": "Strong: NVDA ALFA",
     "Media": "Strong: META/GOOGL both ALFA",
-    "Banking": "Strong: 2/2 ALFA",
-    "Energy": "Weak: XOM/CVX both UNDERPERFORM",
+    "Banking": "Strong (2 ALFA)",
+    "Energy": "Weak (2 UNDERPERFORM)",
     "Retail": "Split: AMZN FAIR, HD/WMT UNDERPERFORM",
-    "Technology": "Mixed: MSFT ALFA, AAPL FAIR",
-    "Pharmaceuticals": "Divergent: LLY ALFA, JNJ FAIR",
+    "Technology": "Mixed (MSFT ALFA, AAPL FAIR)",
+    "Pharmaceuticals": "Split (LLY ALFA, JNJ FAIR)",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
   },
   "modifierInsights": {
@@ -225,7 +225,9 @@
     "Financials showing strength despite rate environment",
     "Defensive sectors (PG, KO) not rewarded with top grades",
     "Financials and mega-cap tech leading; energy and traditional retail lagging",
-    "Low BRF correlates with higher grades in most cases"
+    "Low BRF correlates with higher grades in most cases",
+    "Financials outperforming; Energy lagging",
+    "GLP-1 pharma favored over legacy names"
   ],
   "topPicksHistory": [
     {
@@ -631,6 +633,15 @@
         "NVDA",
         "GOOGL",
         "LLY"
+      ]
+    },
+    {
+      "run": 38,
+      "date": "2026-07-15",
+      "top3": [
+        "META",
+        "JPM",
+        "BAC"
       ]
     }
   ],
