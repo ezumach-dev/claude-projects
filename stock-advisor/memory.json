@@ -1,11 +1,11 @@
 {
-  "lastUpdated": "2026-07-17",
-  "runCount": 40,
+  "lastUpdated": "2026-07-20",
+  "runCount": 41,
   "sectorPatterns": {
     "Semiconductors": "Strong: NVDA ALFA",
-    "Media": "Strong: META/GOOGL both ALFA",
-    "Banking": "Strong (2 ALFA)",
-    "Energy": "Weak (2 UNDERPERFORM)",
+    "Media": "Solid\u2014META and GOOGL both ALFA, Low risk",
+    "Banking": "Strong\u2014both JPM and BAC at ALFA, BDR 9",
+    "Energy": "Weak\u2014XOM and CVX at UNDERPERFORM, BDR 18-21",
     "Retail": "Mixed (AMZN FAIR, WMT/HD UNDERPERFORM)",
     "Technology": "Divergent (MSFT ALFA, AAPL FAIR)",
     "Pharmaceuticals": "Split (LLY ALFA, JNJ FAIR)",
@@ -41,7 +41,10 @@
       "UNH"
     ],
     "LowBRF_HighBDR": "NVDA, XOM show Low risk but weaker grades\u2014valuation-driven",
-    "HighBRF": "Correlated with UNDERPERFORM (UNH, HD)",
+    "HighBRF": [
+      "UNH",
+      "HD"
+    ],
     "lowBRF_lowBDR": "Best risk-reward profile (META, NVDA, GOOGL)",
     "moderateBRF": [
       "AAPL"
@@ -230,7 +233,9 @@
     "GLP-1 pharma favored over legacy names",
     "Run #39: Financials and big-tech Media names leading; Energy and traditional Retail lagging",
     "Financials outperforming defensives",
-    "Energy sector under pressure across the board"
+    "Energy sector under pressure across the board",
+    "AI-adjacent tech (NVDA, GOOGL) favored over legacy tech (AAPL)",
+    "Defensive consumer staples (PG, KO, WMT) underperforming"
   ],
   "topPicksHistory": [
     {
@@ -666,6 +671,16 @@
         "JPM",
         "BAC",
         "MSFT",
+        "NVDA",
+        "GOOGL"
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "tickers": [
+        "META",
+        "JPM",
+        "BAC",
         "NVDA",
         "GOOGL"
       ]
