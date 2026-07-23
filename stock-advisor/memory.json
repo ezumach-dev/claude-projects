@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-21",
-  "runCount": 42,
+  "lastUpdated": "2026-07-23",
+  "runCount": 43,
   "sectorPatterns": {
     "Semiconductors": "Strong: NVDA ALFA",
-    "Media": "Solid\u2014META and GOOGL both ALFA, Low risk",
-    "Banking": "ALFA cluster (JPM, BAC) \u2014 sector favored",
-    "Energy": "UNDERPERFORM cluster (XOM, CVX) \u2014 sector disfavored",
-    "Retail": "Bifurcated: e-commerce (AMZN) strong vs. traditional (HD, WMT) weak",
+    "Media": "Strong\u20142/2 tickers at ALFA, low risk",
+    "Banking": "Solid\u20142/2 ALFA with moderate risk",
+    "Energy": "Weak\u20142/2 UNDERPERFORM, high BDR",
+    "Retail": "Split\u2014AMZN ALFA vs HD/WMT UNDERPERFORM",
     "Technology": "Divergent (MSFT ALFA, AAPL FAIR)",
     "Pharmaceuticals": "Split (LLY ALFA, JNJ FAIR)",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
@@ -37,8 +37,9 @@
       "GOOGL"
     ],
     "highRiskUnderperform": [
-      "HD",
-      "UNH"
+      "TSLA",
+      "UNH",
+      "HD"
     ],
     "LowBRF_HighBDR": "NVDA, XOM show Low risk but weaker grades\u2014valuation-driven",
     "HighBRF": [
@@ -128,9 +129,10 @@
       "HD"
     ],
     "lowRiskAlfa": [
+      "GOOGL",
       "META",
       "NVDA",
-      "GOOGL"
+      "AMZN"
     ],
     "High_BRF_tickers": [
       "UNH",
@@ -237,7 +239,9 @@
     "AI-adjacent tech (NVDA, GOOGL) favored over legacy tech (AAPL)",
     "Defensive consumer staples (PG, KO, WMT) underperforming",
     "Quality tilt evident: low BDR + low BRF names dominate top ranks",
-    "Defensive staples (PG, KO) lagging growth names despite low volatility"
+    "Defensive staples (PG, KO) lagging growth names despite low volatility",
+    "Tech/media leadership with defensive tilt",
+    "Energy under pressure despite low volatility"
   ],
   "topPicksHistory": [
     {
@@ -698,6 +702,19 @@
         "NVDA",
         "GOOGL"
       ]
+    },
+    {
+      "run": 43,
+      "date": "2026-07-23",
+      "topAlfa": [
+        "GOOGL",
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "AMZN"
+      ]
     }
   ],
   "analyzedTickers": {
@@ -716,7 +733,7 @@
     "PG": "UNDERPERFORM",
     "KO": "FAIR",
     "HD": "UNDERPERFORM",
-    "AMZN": "FAIR",
+    "AMZN": "ALFA",
     "AAPL": "FAIR",
     "CAT": "FAIR",
     "TSLA": "UNDERPERFORM",
