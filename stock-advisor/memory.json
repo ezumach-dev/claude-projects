@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-23",
-  "runCount": 43,
+  "lastUpdated": "2026-07-24",
+  "runCount": 44,
   "sectorPatterns": {
-    "Semiconductors": "Strong: NVDA ALFA",
-    "Media": "Strong\u20142/2 tickers at ALFA, low risk",
-    "Banking": "Solid\u20142/2 ALFA with moderate risk",
-    "Energy": "Weak\u20142/2 UNDERPERFORM, high BDR",
-    "Retail": "Split\u2014AMZN ALFA vs HD/WMT UNDERPERFORM",
+    "Semiconductors": "Strong\u2014NVDA ALFA, low BRF",
+    "Media": "Strong\u2014both tickers ALFA, low BRF",
+    "Banking": "Solid\u2014both ALFA but moderate BRF",
+    "Energy": "Weak\u2014both UNDERPERFORM, elevated BDR",
+    "Retail": "Split\u2014AMZN strong, HD/WMT weak",
     "Technology": "Divergent (MSFT ALFA, AAPL FAIR)",
     "Pharmaceuticals": "Split (LLY ALFA, JNJ FAIR)",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
@@ -112,8 +112,9 @@
       "KO"
     ],
     "highBRF_caution": [
-      "UNH",
-      "HD"
+      "TSLA",
+      "HD",
+      "UNH"
     ],
     "BRF_Low_not_sufficient": "XOM shows Low BRF but still UNDERPERFORM due to BDR 18",
     "BDR_threshold": "BDR \u226410 correlates strongly with ALFA; 11-14 maps to FAIR",
@@ -155,6 +156,12 @@
     "HighBRF_LowGrade": [
       "HD",
       "UNH"
+    ],
+    "lowBRF_highConviction": [
+      "GOOGL",
+      "META",
+      "NVDA",
+      "AMZN"
     ]
   },
   "marketConditionNotes": [
@@ -241,7 +248,9 @@
     "Quality tilt evident: low BDR + low BRF names dominate top ranks",
     "Defensive staples (PG, KO) lagging growth names despite low volatility",
     "Tech/media leadership with defensive tilt",
-    "Energy under pressure despite low volatility"
+    "Energy under pressure despite low volatility",
+    "Growth tech and digital media favored over legacy sectors",
+    "Energy under broad pressure despite low BRF for XOM"
   ],
   "topPicksHistory": [
     {
@@ -707,6 +716,19 @@
       "run": 43,
       "date": "2026-07-23",
       "topAlfa": [
+        "GOOGL",
+        "META",
+        "JPM",
+        "BAC",
+        "MSFT",
+        "NVDA",
+        "AMZN"
+      ]
+    },
+    {
+      "run": 44,
+      "date": "2026-07-24",
+      "topALFA": [
         "GOOGL",
         "META",
         "JPM",
