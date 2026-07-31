@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-27",
-  "runCount": 45,
+  "lastUpdated": "2026-07-31",
+  "runCount": 46,
   "sectorPatterns": {
     "Semiconductors": "Strong\u2014NVDA ALFA, low BRF",
-    "Media": "Strong; both tickers ALFA with Low BRF",
-    "Banking": "Solid ALFA grades but Moderate risk exposure",
-    "Energy": "Weak; both tickers UNDERPERFORM",
-    "Retail": "Split: AMZN ALFA vs HD/WMT UNDERPERFORM",
+    "Media": "Strongest sector, both names ALFA with lowest BDR",
+    "Banking": "ALFA grades but elevated risk flags",
+    "Energy": "Mixed signals between integrated majors",
+    "Retail": "Bifurcated\u2014e-commerce stable, brick-and-mortar underperforming",
     "Technology": "Divergent (MSFT ALFA, AAPL FAIR)",
     "Pharmaceuticals": "Split (LLY ALFA, JNJ FAIR)",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
@@ -164,7 +164,17 @@
       "AMZN"
     ],
     "BDR_8-10_cluster": "Core ALFA zone; Media and Tech leaders",
-    "BDR_16+_cluster": "Underperformance threshold confirmed"
+    "BDR_16+_cluster": "Underperformance threshold confirmed",
+    "lowBDR_lowBRF": [
+      "GOOGL",
+      "META",
+      "NVDA"
+    ],
+    "highBDR_highBRF": [
+      "UNH",
+      "TSLA",
+      "HD"
+    ]
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
@@ -254,7 +264,9 @@
     "Growth tech and digital media favored over legacy sectors",
     "Energy under broad pressure despite low BRF for XOM",
     "Digital/cloud leadership intact",
-    "Traditional retail and energy lagging"
+    "Traditional retail and energy lagging",
+    "Run #46: AI-adjacent plays (NVDA, GOOGL, META) cluster at top",
+    "Consumer discretionary weakness evident in retail UNDERPERFORM grades"
   ],
   "topPicksHistory": [
     {
@@ -754,25 +766,37 @@
         "NVDA",
         "AMZN"
       ]
+    },
+    {
+      "run": 46,
+      "date": "2026-07-31",
+      "topALFA": [
+        "GOOGL",
+        "META",
+        "JPM",
+        "BAC",
+        "NVDA",
+        "LLY"
+      ]
     }
   ],
   "analyzedTickers": {
     "NVDA": "ALFA",
     "META": "ALFA",
-    "MSFT": "ALFA",
+    "MSFT": "FAIR",
     "GOOGL": "ALFA",
     "UNH": "UNDERPERFORM",
     "XOM": "UNDERPERFORM",
     "JPM": "ALFA",
     "BAC": "ALFA",
-    "LLY": "FAIR",
+    "LLY": "ALFA",
     "V": "FAIR",
     "JNJ": "FAIR",
-    "CVX": "UNDERPERFORM",
-    "PG": "UNDERPERFORM",
+    "CVX": "FAIR",
+    "PG": "FAIR",
     "KO": "FAIR",
     "HD": "UNDERPERFORM",
-    "AMZN": "ALFA",
+    "AMZN": "FAIR",
     "AAPL": "FAIR",
     "CAT": "FAIR",
     "TSLA": "UNDERPERFORM",
