@@ -1,12 +1,12 @@
 {
-  "lastUpdated": "2026-07-31",
-  "runCount": 46,
+  "lastUpdated": "2026-08-14",
+  "runCount": 47,
   "sectorPatterns": {
     "Semiconductors": "Strong\u2014NVDA ALFA, low BRF",
-    "Media": "Strongest sector, both names ALFA with lowest BDR",
-    "Banking": "ALFA grades but elevated risk flags",
-    "Energy": "Mixed signals between integrated majors",
-    "Retail": "Bifurcated\u2014e-commerce stable, brick-and-mortar underperforming",
+    "Media": "Strong\u2014both constituents ALFA-rated with low BRF",
+    "Banking": "Solid\u2014uniform ALFA grades, moderate risk",
+    "Energy": "Weak\u2014no ALFA representation, elevated BDR across sector",
+    "Retail": "Divergent\u2014AMZN outperforms while HD/WMT underperform",
     "Technology": "Divergent (MSFT ALFA, AAPL FAIR)",
     "Pharmaceuticals": "Split (LLY ALFA, JNJ FAIR)",
     "Healthcare": "Caution (UNH UNDERPERFORM, High BRF)"
@@ -117,7 +117,7 @@
       "UNH"
     ],
     "BRF_Low_not_sufficient": "XOM shows Low BRF but still UNDERPERFORM due to BDR 18",
-    "BDR_threshold": "BDR \u226410 correlates strongly with ALFA; 11-14 maps to FAIR",
+    "BDR_threshold": "BDR \u226410 correlates with ALFA; BDR \u226515 skews UNDERPERFORM",
     "lowBRF_notGuarantee": "Low BRF alone insufficient for top grades (see XOM, KO)",
     "highBRF_underperform": [
       "UNH",
@@ -174,7 +174,8 @@
       "UNH",
       "TSLA",
       "HD"
-    ]
+    ],
+    "BRF_High_flag": "High BRF appears only in UNDERPERFORM tier (UNH, TSLA, HD)"
   },
   "marketConditionNotes": [
     "2026-05-01: Narrow leadership; only 1 ALFA, 5 FAIR, 14 UNDERPERFORM across 20 large-caps.",
@@ -266,7 +267,9 @@
     "Digital/cloud leadership intact",
     "Traditional retail and energy lagging",
     "Run #46: AI-adjacent plays (NVDA, GOOGL, META) cluster at top",
-    "Consumer discretionary weakness evident in retail UNDERPERFORM grades"
+    "Consumer discretionary weakness evident in retail UNDERPERFORM grades",
+    "Run #47: Growth/tech leadership (Media, Semis) with defensive sectors (Consumer, Energy) lagging",
+    "No prior grades available\u2014baseline established this run"
   ],
   "topPicksHistory": [
     {
@@ -771,6 +774,18 @@
       "run": 46,
       "date": "2026-07-31",
       "topALFA": [
+        "GOOGL",
+        "META",
+        "JPM",
+        "BAC",
+        "NVDA",
+        "LLY"
+      ]
+    },
+    {
+      "run": 47,
+      "date": "2026-08-14",
+      "alfaTickers": [
         "GOOGL",
         "META",
         "JPM",
