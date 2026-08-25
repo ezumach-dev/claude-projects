@@ -1,0 +1,1 @@
+The GitHub Action did not fire for 2026-08-25. Neither `2026-08-25.json` nor `2026-08-25-ERROR.md` was present in `stock-advisor/data/` at routine execution time. No analysis was performed and `memory.json` was not modified.
