@@ -1,0 +1,1 @@
+The GitHub Action did not fire for 2026-08-31: no data file (`2026-08-31.json`) and no error file (`2026-08-31-ERROR.md`) were found in `stock-advisor/data/`. No synthesis was performed and `memory.json` was not modified.
